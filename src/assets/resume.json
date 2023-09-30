@@ -1,0 +1,472 @@
+{
+  "basic_info": {
+    "name": "Ahmed Mujtaba Butt",
+    "titles": [],
+    "resumeLink": "",
+    "contact": [
+      {
+        "name": "email",
+        "url": "mailto:ahmedmujtababutt02@outlook.com",
+        "class": "fas fa-envelope"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/ahmed-mujtaba-butt/",
+        "class": "fab fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/ahmedmbutt/",
+        "class": "fab fa-instagram"
+      }
+    ]
+  },
+  "about": {
+    "description_header": "As-salamu Alaykum 👋",
+    "description": "I'm Ahmed Mujtaba Butt, a budding talent in the world of tech with a passion for innovation. Currently pursuing a Bachelor's degree in Software Engineering, I've already dipped my toes into the professional waters with two impactful internships. During my time as an intern, I had the exciting opportunity to develop a Resume Parser and assist in creating a cutting-edge computer vision-based video tolling system. With a keen interest in Artificial Intelligence and Machine Learning, as well as proficiency in Web Development (MERN Stack), I'm driven to harness the power of technology to solve real-world problems. Let's connect and explore the limitless possibilities of technology together!",
+    "image": "profile.png"
+  },
+  "social": [
+    {
+      "name": "portfolio",
+      "url": "/",
+      "class": "fas fa-globe"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/ahmed-mujtaba-butt",
+      "class": "fab fa-linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/ahmedmbutt",
+      "class": "fab fa-github"
+    },
+    {
+      "name": "dev",
+      "url": "https://dev.to/ahmedmbutt",
+      "class": "fab fa-dev"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@ahmedmbutt",
+      "class": "fab fa-medium"
+    },
+    {
+      "name": "kaggle",
+      "url": "https://www.kaggle.com/amb2002",
+      "class": "fab fa-kaggle"
+    },
+    {
+      "name": "leetcode",
+      "url": "https://leetcode.com/ahmedmbutt",
+      "class": "fas fa-link"
+    }
+  ],
+  "skills": {
+    "icons": [
+      {
+        "name": "PyTorch",
+        "icon": "pytorch"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "tensorflow"
+      },
+      {
+        "name": "Keras",
+        "icon": "keras"
+      },
+      {
+        "name": "OpenCV",
+        "icon": "opencv"
+      },
+      {
+        "name": "Pillow",
+        "icon": "pillow"
+      },
+      {
+        "name": "SciPy",
+        "icon": "scipy"
+      },
+      {
+        "name": "scikit-learn",
+        "icon": "scikitlearn"
+      },
+      {
+        "name": "Matplotlib",
+        "icon": "matplotlib"
+      },
+      {
+        "name": "NumPy",
+        "icon": "numpy"
+      },
+      {
+        "name": "pandas",
+        "icon": "pandas"
+      },
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Express.js",
+        "icon": "express"
+      },
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "name": "EJS",
+        "icon": "ejs"
+      },
+      {
+        "name": "jQuery",
+        "icon": "jquery"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "Bootstrap",
+        "icon": "bootstrap"
+      },
+      {
+        "name": "CSS3",
+        "icon": "css3"
+      },
+      {
+        "name": "HTML5",
+        "icon": "html5"
+      },
+      {
+        "name": "LaTeX",
+        "icon": "latex"
+      },
+      {
+        "name": "Visual Basic",
+        "icon": "visualbasic"
+      },
+      {
+        "name": "MATLAB",
+        "icon": "matlab"
+      },
+      {
+        "name": "Assembly Language",
+        "icon": "assembly"
+      },
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SQL",
+        "icon": "sql"
+      },
+      {
+        "name": "Python",
+        "icon": "python"
+      },
+      {
+        "name": "Java",
+        "icon": "java"
+      },
+      {
+        "name": "C++",
+        "icon": "cplusplus"
+      },
+      {
+        "name": "C",
+        "icon": "c"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "startDate": "Summer 2023",
+      "description": "The website you're currently on!",
+      "images": [
+        "portfolio-website/pw-1.png",
+        "portfolio-website/pw-2.png",
+        "portfolio-website/pw-3.png",
+        "portfolio-website/pw-4.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/portfolio",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-sass-plain",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "Heart Failure Prediction",
+      "startDate": "Spring 2023",
+      "description": "A machine learning model to predict the mortality rate of patients suffering from heart failure by evualating various machine learning algorithms and selecting the best one",
+      "images": [
+        "heart-failure-prediction/hfp-1.png",
+        "heart-failure-prediction/hfp-2.png",
+        "heart-failure-prediction/hfp-3.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Heart-Failure-Prediction",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "File Explorer",
+      "startDate": "Spring 2023",
+      "description": "A file explorer application which allows the user to navigate through the files and folders of their system and perform various operations on them while also providing various keyboard shortcuts",
+      "images": ["file-explorer/fe-1.png", "file-explorer/fe-2.png"],
+      "url": "https://github.com/ahmedmbutt/FileXplorer",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Department Dashboard",
+      "startDate": "Fall 2022",
+      "description": "A dashboard for the department of Software Engineering at NUST which allows students to view their grades, attendance, and other information, allows the teachers to upload grades and attendance, and allows the admin to manage the users",
+      "images": [
+        "department-dashboard/dd-1.png",
+        "department-dashboard/dd-2.png",
+        "department-dashboard/dd-3.png",
+        "department-dashboard/dd-4.png",
+        "department-dashboard/dd-5.png",
+        "department-dashboard/dd-6.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/DepartmentDashboard",
+      "technologies": [
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-redux-plain",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "MUI"
+        }
+      ]
+    },
+    {
+      "title": "CMS Notifier",
+      "startDate": "Summer 2022",
+      "description": "A notifier for the CMS website of NUST which notifies the user for any changes in the website",
+      "images": ["cms-notifier/cn-1.png"],
+      "url": "https://github.com/ahmedmbutt/CMS-Notifier",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "Chat Application",
+      "startDate": "Spring 2022",
+      "description": "A chat application with a server and multiple clients",
+      "images": ["chat-application/ca-1.png"],
+      "url": "https://github.com/ahmedmbutt/Chat-Application",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Sales & Inventory Management System",
+      "startDate": "Fall 2021",
+      "description": "A management system to handle sales & inventory with database connectivity",
+      "images": [
+        "sales-inventory-management-system/sims-1.png",
+        "sales-inventory-management-system/sims-2.png",
+        "sales-inventory-management-system/sims-3.png",
+        "sales-inventory-management-system/sims-4.png",
+        "sales-inventory-management-system/sims-5.png",
+        "sales-inventory-management-system/sims-6.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Sales-Inventory-Management-System",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        },
+        {
+          "class": "devicon-microsoftsqlserver-plain",
+          "name": "SQL"
+        }
+      ]
+    },
+    {
+      "title": "2048 AI",
+      "startDate": "Summer 2021",
+      "description": "2048 game clone with an AI developed using the Minimax Algorithm with Alpha-Beta Pruning",
+      "images": ["2048-ai/ai-1.png"],
+      "url": "https://github.com/ahmedmbutt/2048-AI",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Metal Detector (Simulation)",
+      "startDate": "Spring 2021",
+      "description": "A simulation of a Metal Detector using Proteus",
+      "images": ["metal-detector/md-1.png"],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "DSLR Camera (Orthographic Projection)",
+      "startDate": "Spring 2021",
+      "description": "An orthographic projection of a DSLR Camera using AutoCAD",
+      "images": ["camera-projection/cp-1.png"],
+      "url": "",
+      "technologies": []
+    },
+    {
+      "title": "Supermarket Management System",
+      "startDate": "Spring 2021",
+      "description": "A desktop management system app for any Supermarket implemented using Object-Oriented Programming concepts and File handling",
+      "images": [
+        "supermarket-management-system/sms-1.png",
+        "supermarket-management-system/sms-2.png",
+        "supermarket-management-system/sms-3.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/SuperMarketManagementSystem",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "title": "Entertainment System",
+      "startDate": "Fall 2020",
+      "description": "A command line interface project which allows an admin or a user to either Enter, Search, or Delete a record under the category of Music, Movie or Series",
+      "images": [
+        "entertainment-system/es-1.png",
+        "entertainment-system/es-2.png",
+        "entertainment-system/es-3.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Entertainment-System",
+      "technologies": [
+        {
+          "class": "devicon-cplusplus-plain",
+          "name": "C++"
+        }
+      ]
+    },
+    {
+      "title": "Bluetooth Speakers",
+      "startDate": "Fall 2020",
+      "description": "A device which allows users to connect to a bluetooth speaker and play music from their device",
+      "images": ["bluetooth-speaker/bs-1.jpg"],
+      "url": "",
+      "technologies": []
+    }
+  ],
+  "experience": [
+    {
+      "companyLogo": "OneNetwork.png",
+      "company": "One Network",
+      "role": "IT Intern",
+      "date": "Aug 2023 - Sep 2023",
+      "descBullets": [
+        "Conducted Data Cleaning, Annotation, and Augmentation on huge datasets of images",
+        "Assisted in developing an Auto-Vehicle Categorization (AVC) project using semi-supervised learning approach based on YOLOv8",
+        "Supported deployment of AVC on motorways and toll plazas",
+        "Conducted Internal Testing of M-Tag One Network App"
+      ]
+    },
+    {
+      "companyLogo": "Skillibility.png",
+      "company": "Skillibility",
+      "role": "Python Developer",
+      "date": "Sep 2022 - Oct 2022",
+      "descBullets": [
+        "Developed a Resume Parser module in Python that aimed to extract relevant information from resumes",
+        "Evaluated the module on a diverse set of resumes and achieved an accuracy rate of 80-85% through multiple revisions"
+      ]
+    },
+    {
+      "companyLogo": "PRCS.png",
+      "company": "Pakistan Red Crescent Society",
+      "role": "Student Volunteer",
+      "date": "Aug 2022",
+      "descBullets": [
+        "Spread awareness among community on animal welfare",
+        "Interviewed a veterinarian on animal cruelty and rights",
+        "Delivered presentations to orphanage kids on animal care",
+        "Designed and distributed brochures on animal care and rights"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "O Level",
+      "name": "St. Mary's Academy",
+      "years": "2015 - 2018",
+      "grade": "Grades: 5A* 3A 1B",
+      "logo": "SMA.png"
+    },
+    {
+      "title": "A Level",
+      "name": "St. Mary's Academy",
+      "years": "2018 - 2020",
+      "grade": "Grades: 4A*",
+      "logo": "SMA.png"
+    },
+    {
+      "title": "Bachelor of Engineering in Software Engineering",
+      "name": "National University of Sciences & Technology (NUST)",
+      "years": "Nov 2020 - present",
+      "grade": "CGPA: 3.90",
+      "logo": "NUST.png"
+    }
+  ]
+}
