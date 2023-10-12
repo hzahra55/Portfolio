@@ -1,3 +1,4 @@
+import resumeFile from "../assets/resume.pdf";
 import { useEffect, useState } from "react";
 import Switch from "react-switch";
 import { Button } from "react-bootstrap";
@@ -5,8 +6,11 @@ import { TypeAnimation } from "react-type-animation";
 import PropTypes from "prop-types";
 
 const Header = ({ resumeBasicInfo }) => {
-  const [checked, setChecked] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+  const [checked, setChecked] = useState(systemTheme == "dark" ? true : false);
+  const [theme, setTheme] = useState(systemTheme);
 
   useEffect(() => {
     const body = document.body;
@@ -21,7 +25,7 @@ const Header = ({ resumeBasicInfo }) => {
     return null;
   }
 
-  const { name, titles, resumeUrl } = resumeBasicInfo;
+  const { name, titles } = resumeBasicInfo;
 
   const toggleTheme = () => {
     setChecked(!checked);
@@ -102,7 +106,7 @@ const Header = ({ resumeBasicInfo }) => {
                 id="resume-file"
                 className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                 variant="light"
-                href={resumeUrl}
+                href={resumeFile}
                 target="_blank"
                 rel="noopener noreferrer"
               >

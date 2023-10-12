@@ -2,7 +2,6 @@
   "basic_info": {
     "name": "Ahmed Mujtaba Butt",
     "titles": [],
-    "resumeLink": "",
     "contact": [
       {
         "name": "email",
@@ -221,7 +220,7 @@
     {
       "title": "Heart Failure Prediction",
       "startDate": "Spring 2023",
-      "description": "A machine learning model to predict the mortality rate of patients suffering from heart failure by evualating various machine learning algorithms and selecting the best one",
+      "description": "A machine learning model to predict the mortality rate of patients suffering from heart failure by evaluating various machine learning algorithms and selecting the best one",
       "images": [
         "heart-failure-prediction/hfp-1.png",
         "heart-failure-prediction/hfp-2.png",
@@ -400,14 +399,6 @@
           "name": "C++"
         }
       ]
-    },
-    {
-      "title": "Bluetooth Speakers",
-      "startDate": "Fall 2020",
-      "description": "A device which allows users to connect to a bluetooth speaker and play music from their device",
-      "images": ["bluetooth-speaker/bs-1.jpg"],
-      "url": "",
-      "technologies": []
     }
   ],
   "experience": [
