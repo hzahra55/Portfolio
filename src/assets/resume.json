@@ -105,6 +105,18 @@
         "icon": "pandas"
       },
       {
+        "name": "Dart",
+        "icon": "dart"
+      },
+      {
+        "name": "Firebase",
+        "icon": "firebase"
+      },
+      {
+        "name": "Flutter",
+        "icon": "flutter"
+      },
+      {
         "name": "MongoDB",
         "icon": "mongodb"
       },
