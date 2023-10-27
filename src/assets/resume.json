@@ -137,12 +137,16 @@
         "icon": "ejs"
       },
       {
+        "name": "Flask",
+        "icon": "flask"
+      },
+      {
         "name": "jQuery",
         "icon": "jquery"
       },
       {
-        "name": "JavaScript",
-        "icon": "javascript"
+        "name": "Sass",
+        "icon": "sass"
       },
       {
         "name": "Bootstrap",
@@ -157,6 +161,10 @@
         "icon": "html5"
       },
       {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
         "name": "LaTeX",
         "icon": "latex"
       },
@@ -169,7 +177,7 @@
         "icon": "matlab"
       },
       {
-        "name": "Assembly Language",
+        "name": "Assembly",
         "icon": "assembly"
       },
       {
@@ -179,6 +187,10 @@
       {
         "name": "SQL",
         "icon": "sql"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
       },
       {
         "name": "Python",
