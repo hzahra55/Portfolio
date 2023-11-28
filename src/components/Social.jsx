@@ -30,7 +30,7 @@ const Social = ({ resumeSocial }) => {
         <div className="col-md-12">
           <h1 className="section-title">
             <span className="text-white">
-              <i className="fa-solid fa-share-nodes">&nbsp;</i>
+              <i className="fa-solid fa-hashtag">&nbsp;</i>
               {"profiles"}
             </span>
           </h1>
