@@ -42,19 +42,9 @@
       "class": "fab fa-github"
     },
     {
-      "name": "dev",
-      "url": "https://dev.to/ahmedmbutt",
-      "class": "fab fa-dev"
-    },
-    {
       "name": "medium",
       "url": "https://medium.com/@ahmedmbutt",
       "class": "fab fa-medium"
-    },
-    {
-      "name": "kaggle",
-      "url": "https://www.kaggle.com/amb2002",
-      "class": "fab fa-kaggle"
     },
     {
       "name": "leetcode",
@@ -427,15 +417,26 @@
   ],
   "experience": [
     {
+      "companyLogo": "Bizwitt.png",
+      "company": "Bizwitt",
+      "role": "Backend Developer",
+      "date": "Oct 2023 - Present",
+      "descBullets": [
+        "Engineered mobile app backends using Dart & Firebase, enhancing application functionality and performance",
+        "Constructed web app backends using Node.js & MongoDB, optimizing data management and system performance",
+        "Led a team of fellow classmates, ensuring timely project delivery and adherence to requirements for successful outcomes"
+      ]
+    },
+    {
       "companyLogo": "OneNetwork.png",
       "company": "One Network",
       "role": "IT Intern",
       "date": "Aug 2023 - Sep 2023",
       "descBullets": [
-        "Conducted Data Cleaning, Annotation, and Augmentation on huge datasets of images",
-        "Assisted in developing an Auto-Vehicle Categorization (AVC) project using semi-supervised learning approach based on YOLOv8",
-        "Supported deployment of AVC on motorways and toll plazas",
-        "Conducted Internal Testing of M-Tag One Network App"
+        "Conducted data cleaning, annotation, and augmentation",
+        "Assisted in developing an Auto-Vehicle Categorization (AVC) project using a semi-supervised learning approach based on YOLOv8",
+        "Supported the deployment of AVC on motorways and toll plazas",
+        "Conducted internal testing of the M-Tag One Network App"
       ]
     },
     {
@@ -444,8 +445,8 @@
       "role": "Python Developer",
       "date": "Sep 2022 - Oct 2022",
       "descBullets": [
-        "Developed a Resume Parser module in Python that aimed to extract relevant information from resumes",
-        "Evaluated the module on a diverse set of resumes and achieved an accuracy rate of 80-85% through multiple revisions"
+        "Developed a Python-based Resume Parser module to extract relevant information from resumes",
+        "Achieved an 80-85% accuracy rate after multiple module revisions"
       ]
     },
     {
@@ -454,9 +455,9 @@
       "role": "Student Volunteer",
       "date": "Aug 2022",
       "descBullets": [
-        "Spread awareness among community on animal welfare",
-        "Interviewed a veterinarian on animal cruelty and rights",
-        "Delivered presentations to orphanage kids on animal care",
+        "Raised community awareness on animal welfare",
+        "Conducted interviews with veterinarians about animal cruelty and rights",
+        "Delivered presentations on animal care to orphanage children",
         "Designed and distributed brochures on animal care and rights"
       ]
     }
