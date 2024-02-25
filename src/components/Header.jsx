@@ -105,7 +105,7 @@ const Header = ({ resumeBasicInfo }) => {
                 id="resume-file"
                 className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                 variant="light"
-                href="https://www.overleaf.com/project/65db74c590af0b00d48e06c9/output/output.pdf"
+                href="https://doc-0c-2c-prod-03-apps-viewer.googleusercontent.com/viewer2/prod-03/pdf/9jn1e0jcb4vuhlg2rg91j1rkel93775u/92qpc5go7i9mmf3pnk5n2baqtnqgag7c/1708895175000/3/*/APznzaZv8JTk-c1RJ8bnbCilScJXy2uamV0meBz9ch3JwcmdypQYLpoGD-7VF3i7E0wbS50jzXEvSYD3p8rN8zYJV-W71sYjhIxLDvg4cdP4HqVjSxpbySod4j8_RmQLwEuBnjk2Vi5cuI3rk0SnRKCz9mwDbWXq02d-t2QvRa9kswGRMRx8KJeY12xCRLLd4LLWKPcQ0CJ-qbCnr9OSE8ouK0x55mt55NHAtS3SLCzAKYIsQB20j-DZnjKwZnflRPtdSYeniyZMQ5uftUdunp2nWOFxG2q_tIjdTzqXoXeCk4_9OXo-tDkvS2vo83MTsaEDgVJyoA8W0uAqC_Pg9TCNpjkTfq3p_T4vQF83zlBnLaiIbrCZJA5xziIz46Xu76r_UF4PE8MPhd3shMQ9j2a4kT2qLdyqVQ==?authuser"
                 target="_blank"
                 rel="noopener noreferrer"
               >
