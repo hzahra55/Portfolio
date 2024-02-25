@@ -27,11 +27,6 @@
   },
   "social": [
     {
-      "name": "portfolio",
-      "url": "/",
-      "class": "fas fa-globe"
-    },
-    {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/ahmed-mujtaba-butt",
       "class": "fab fa-linkedin"
@@ -45,11 +40,6 @@
       "name": "medium",
       "url": "https://medium.com/@ahmedmbutt",
       "class": "fab fa-medium"
-    },
-    {
-      "name": "leetcode",
-      "url": "https://leetcode.com/ahmedmbutt",
-      "class": "fas fa-link"
     }
   ],
   "skills": {
@@ -422,9 +412,8 @@
       "role": "Backend Developer",
       "date": "Oct 2023 - Present",
       "descBullets": [
-        "Engineered mobile app backends using Dart & Firebase, enhancing application functionality and performance",
-        "Constructed web app backends using Node.js & MongoDB, optimizing data management and system performance",
-        "Spearheaded a team of fellow classmates, ensuring timely project delivery and adherence to requirements for successful outcomes"
+        "Developed mobile and web app backends using Dart and JavaScript with Firebase and SQLite",
+        "Spearheaded a team of fellow classmates, ensuring timely project delivery and adherence to client requirements"
       ]
     },
     {

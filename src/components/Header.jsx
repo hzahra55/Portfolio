@@ -1,4 +1,3 @@
-import resumeFile from "../assets/resume.pdf";
 import { useEffect, useState } from "react";
 import Switch from "react-switch";
 import { Button } from "react-bootstrap";
@@ -106,7 +105,7 @@ const Header = ({ resumeBasicInfo }) => {
                 id="resume-file"
                 className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                 variant="light"
-                href={resumeFile}
+                href="https://www.overleaf.com/project/65db74c590af0b00d48e06c9/output/output.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
