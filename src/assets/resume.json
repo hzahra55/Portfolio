@@ -22,7 +22,7 @@
   },
   "about": {
     "description_header": "As-salamu Alaykum 👋",
-    "description": "I'm Ahmed Mujtaba Butt, a budding talent in the world of tech with a passion for innovation. Currently pursuing a Bachelor's degree in Software Engineering, I've already dipped my toes into the professional waters with two impactful internships. During my time as an intern, I had the exciting opportunity to develop a Resume Parser and assist in creating a cutting-edge computer vision-based video tolling system. With a keen interest in Artificial Intelligence and Machine Learning, as well as proficiency in Web Development (MERN Stack), I'm driven to harness the power of technology to solve real-world problems. Let's connect and explore the limitless possibilities of technology together!",
+    "description": "I'm Ahmed Mujtaba Butt a passionate and accomplished Machine Learning Engineer, currently applying my expertise at DiveDeepAI. I graduated with a Gold Medal from NUST, and I love working with AI and ML. My journey includes developing innovative solutions like AI Gallery Genie, a mobile app that revolutionizes image galleries using AI. I'm excited about driving innovation and always open to new opportunities and collaborations. Let’s connect and make amazing things happen together!",
     "image": "profile.png"
   },
   "social": [
@@ -40,10 +40,24 @@
       "name": "medium",
       "url": "https://medium.com/@ahmedmbutt",
       "class": "fab fa-medium"
+    },
+    {
+      "name": "huggingface",
+      "url": "https://huggingface.co/ahmedmbutt",
+      "class": "fas fa-face-grin-beam"
+    },
+    {
+      "name": "leetcode",
+      "url": "https://leetcode.com/u/ahmedmbutt",
+      "class": "fas fa-link"
     }
   ],
   "skills": {
     "icons": [
+      {
+        "name": "Hugging Face",
+        "icon": "huggingface"
+      },
       {
         "name": "PyTorch",
         "icon": "pytorch"
@@ -57,6 +71,18 @@
         "icon": "keras"
       },
       {
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "name": "Flask",
+        "icon": "flask"
+      },
+      {
         "name": "OpenCV",
         "icon": "opencv"
       },
@@ -65,12 +91,20 @@
         "icon": "pillow"
       },
       {
+        "name": "Pickle",
+        "icon": "pickle"
+      },
+      {
+        "name": "Scikit-Learn",
+        "icon": "scikitlearn"
+      },
+      {
         "name": "SciPy",
         "icon": "scipy"
       },
       {
-        "name": "scikit-learn",
-        "icon": "scikitlearn"
+        "name": "Seaborn",
+        "icon": "seaborn"
       },
       {
         "name": "Matplotlib",
@@ -81,8 +115,16 @@
         "icon": "numpy"
       },
       {
-        "name": "pandas",
+        "name": "Pandas",
         "icon": "pandas"
+      },
+      {
+        "name": "Gradio",
+        "icon": "gradio"
+      },
+      {
+        "name": "Tkinter",
+        "icon": "tkinter"
       },
       {
         "name": "Firebase",
@@ -91,10 +133,6 @@
       {
         "name": "Flutter",
         "icon": "flutter"
-      },
-      {
-        "name": "Dart",
-        "icon": "dart"
       },
       {
         "name": "MongoDB",
@@ -113,24 +151,28 @@
         "icon": "nodejs"
       },
       {
-        "name": "EJS",
-        "icon": "ejs"
+        "name": "Vite",
+        "icon": "vitejs"
       },
       {
-        "name": "Flask",
-        "icon": "flask"
+        "name": "EJS",
+        "icon": "ejs"
       },
       {
         "name": "jQuery",
         "icon": "jquery"
       },
       {
-        "name": "Sass",
-        "icon": "sass"
+        "name": "MUI",
+        "icon": "materialui"
       },
       {
         "name": "Bootstrap",
         "icon": "bootstrap"
+      },
+      {
+        "name": "Sass",
+        "icon": "sass"
       },
       {
         "name": "CSS3",
@@ -141,12 +183,20 @@
         "icon": "html5"
       },
       {
+        "name": "Conda",
+        "icon": "anaconda"
+      },
+      {
         "name": "Git",
         "icon": "git"
       },
       {
         "name": "LaTeX",
         "icon": "latex"
+      },
+      {
+        "name": "Assembly",
+        "icon": "assembly"
       },
       {
         "name": "Visual Basic",
@@ -157,8 +207,12 @@
         "icon": "matlab"
       },
       {
-        "name": "Assembly",
-        "icon": "assembly"
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+      },
+      {
+        "name": "SQLite",
+        "icon": "sqlite"
       },
       {
         "name": "MySQL",
@@ -166,7 +220,7 @@
       },
       {
         "name": "SQL",
-        "icon": "sql"
+        "icon": "microsoftsqlserver"
       },
       {
         "name": "JavaScript",
@@ -175,6 +229,10 @@
       {
         "name": "Python",
         "icon": "python"
+      },
+      {
+        "name": "Dart",
+        "icon": "dart"
       },
       {
         "name": "Java",
@@ -407,13 +465,32 @@
   ],
   "experience": [
     {
+      "companyLogo": "DiveDeepAI.png",
+      "company": "DiveDeepAI",
+      "role": "Junior Machine Learning Engineer",
+      "date": "Aug 2024 - present",
+      "descBullets": []
+    },
+    {
+      "companyLogo": "CloudGate.png",
+      "company": "CloudGate Technologies",
+      "role": "AI Backend Engineer",
+      "date": "Apr 2024 - Jun 2024",
+      "descBullets": [
+        "Developed pipelines for text-based image generation, instruction-based image editing, background removal, and image variations",
+        "Deployed pipelines on HuggingFace Inference Endpoints for enhanced security and scalability"
+      ]
+    },
+    {
       "companyLogo": "Bizwitt.png",
       "company": "Bizwitt",
-      "role": "Backend Developer",
-      "date": "Oct 2023 - Present",
+      "role": "Mobile Backend Developer",
+      "date": "Oct 2023 - Apr 2024",
       "descBullets": [
-        "Developed mobile and web app backends using Dart and JavaScript with Firebase and SQLite",
-        "Spearheaded a team of fellow classmates, ensuring timely project delivery and adherence to client requirements"
+        "Developed backend for mobile applications using Flutter",
+        "Implemented Firebase for user authentication and data storage",
+        "Integrated RESTful APIs for data retrieval and manipulation",
+        "Led the development of mobile applications ensuring timely delivery and quality assurance"
       ]
     },
     {
@@ -470,7 +547,7 @@
       "title": "Bachelor of Engineering in Software Engineering",
       "name": "National University of Sciences & Technology (NUST)",
       "years": "Nov 2020 - present",
-      "grade": "CGPA: 3.90",
+      "grade": "CGPA: 3.91",
       "logo": "NUST.png"
     }
   ]

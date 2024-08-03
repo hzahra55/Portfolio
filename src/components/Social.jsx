@@ -13,7 +13,7 @@ const Social = ({ resumeSocial }) => {
             <i className={social.class} style={{ fontSize: "220%" }}>
               <p
                 className="text-center"
-                style={{ fontSize: "30%", marginTop: "4px" }}
+                style={{ fontSize: "20%", marginTop: "4px" }}
               >
                 {social.name}
               </p>

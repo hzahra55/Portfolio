@@ -19,7 +19,7 @@ const About = ({ resumeAbout }) => {
           </span>
         </h1>
         <div className="row center mx-auto my-5">
-          <div className="col-md-4 mb-5 center">
+          <div className="col-md-4 center">
             <div className="polaroid">
               <span style={{ cursor: "auto" }}>
                 <img

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <Col lg="6" className="mx-auto">
+    <Col lg="4" className="mx-auto">
       <Fade direction={"up"} triggerOnce={true}>
         <Card
           className="shadow-lg--hover mb-4 shadow border-0 text-center rounded"
