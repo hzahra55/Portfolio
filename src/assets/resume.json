@@ -79,6 +79,10 @@
         "icon": "fastapi"
       },
       {
+        "name": "Django",
+        "icon": "django"
+      },
+      {
         "name": "Flask",
         "icon": "flask"
       },
@@ -89,10 +93,6 @@
       {
         "name": "Pillow",
         "icon": "pillow"
-      },
-      {
-        "name": "Pickle",
-        "icon": "pickle"
       },
       {
         "name": "Scikit-Learn",
