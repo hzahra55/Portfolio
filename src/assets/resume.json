@@ -183,6 +183,10 @@
         "icon": "html5"
       },
       {
+        "name": "Linux",
+        "icon": "linux"
+      },
+      {
         "name": "Conda",
         "icon": "anaconda"
       },
@@ -205,6 +209,10 @@
       {
         "name": "MATLAB",
         "icon": "matlab"
+      },
+      {
+        "name": "AutoCAD",
+        "icon": "autocad"
       },
       {
         "name": "PostgreSQL",
