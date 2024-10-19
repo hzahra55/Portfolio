@@ -1,7 +1,7 @@
 {
   "basic_info": {
     "name": "Ahmed Mujtaba Butt",
-    "titles": [],
+    "titles": ["Machine Learning Engineer"],
     "contact": [
       {
         "name": "email",
@@ -257,6 +257,98 @@
     ]
   },
   "projects": [
+    {
+      "title": "Heart Health Management System",
+      "startDate": "Spring 2024",
+      "description": "A mobile application that predicts the risk of heart diseases by analyzing the user's health data and provides personalized recommendations to improve heart health",
+      "images": [
+        "heart-health-management-system/hhms-1.png",
+        "heart-health-management-system/hhms-2.png",
+        "heart-health-management-system/hhms-3.png",
+        "heart-health-management-system/hhms-4.png",
+        "heart-health-management-system/hhms-5.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Heart-Health-Management-System",
+      "technologies": [
+        {
+          "class": "devicon-dart-plain",
+          "name": "Dart"
+        },
+        {
+          "class": "devicon-flutter-plain",
+          "name": "Flutter"
+        },
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        {
+          "class": "devicon-scikitlearn-plain",
+          "name": "scikit-learn"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Hep2 Image Segmentation",
+      "startDate": "Fall 2023",
+      "description": "Segmentation of Hep2 images using traditional image processing techniques and deep learning models",
+      "images": [
+        "hep-images-segmentation/his-1.png",
+        "hep-images-segmentation/his-2.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Hep2-Images-Segmentation",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV"
+        },
+        {
+          "class": "devicon-keras-plain",
+          "name": "Keras"
+        }
+      ]
+    },
+    {
+      "title": "Employee Attrition Prediction",
+      "startDate": "Fall 2023",
+      "description": "A machine learning model to predict the attrition rate of employees in a company by performing data preprocessing, exploratory data analysis, model selection and evaluation",
+      "images": [
+        "employee-attrition-prediction/eap-1.png",
+        "employee-attrition-prediction/eap-2.png",
+        "employee-attrition-prediction/eap-3.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Employee-Attrition-Prediction",
+      "technologies": [
+        {
+          "class": "devicon-scikitlearn-plain",
+          "name": "scikit-learn"
+        },
+        {
+          "class": "devicon-matplotlib-plain",
+          "name": "Matplotlib"
+        },
+        {
+          "class": "devicon-pandas-plain",
+          "name": "pandas"
+        },
+        {
+          "class": "devicon-numpy-plain",
+          "name": "NumPy"
+        }
+      ]
+    },
     {
       "title": "Portfolio Website",
       "startDate": "Summer 2023",

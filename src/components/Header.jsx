@@ -37,6 +37,7 @@ const Header = ({ resumeBasicInfo }) => {
           key={index}
           sequence={[title.toUpperCase(), 1500]}
           repeat={Infinity}
+          cursor={false}
           className="title-styles"
         />
       ))
