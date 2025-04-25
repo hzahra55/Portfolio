@@ -81,7 +81,7 @@ header h1 {
   font-size: 400%;
   text-align: center;
   font-weight: 600 !important;
-  color: #353239;
+  color: #33125d;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin: 0 auto 18px auto;
   width: 100%;
@@ -347,7 +347,7 @@ header h1 {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background-color: rgba(51, 51, 51, 0.9);
+  background-color: rgba(52, 51, 51, 0.9);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -436,7 +436,7 @@ footer a:focus {
   color: #212529;
   background-color: #a1b5e9;
   border-color: #fff;
-  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.8);
   position: relative;
   text-transform: uppercase;
   will-change: transform;
@@ -515,5 +515,56 @@ footer a:focus {
 
   .row {
     margin: 20px 0;
+  }
+}
+
+/* Fade in the image smoothly */
+.polaroid img {
+  max-width: 100%;
+  max-height: 60vh;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease; /* 👈 Smooth transition in 1 second */
+}
+
+/* When loaded, make it fully visible */
+.polaroid img.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade in the text and button */
+.fade-in-text {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade-in-text.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+@media (max-width: 768px) {
+  #home .row.aligner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #home .col-md-6 {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .btn-wrapper {
+    margin-top: 20px;
   }
 }
