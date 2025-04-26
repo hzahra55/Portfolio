@@ -44,11 +44,14 @@ const ExperienceCard = ({ experience }) => {
               }}
             >
               {experience.desc}
-              <ListGroup className="list-group-flush">
-                {experience.descBullets.map((desc, index) => (
-                  <ListGroup.Item key={index}>{desc}</ListGroup.Item>
-                ))}
-              </ListGroup>
+              {experience.descBullets && experience.descBullets.length > 0 && (
+                <ListGroup className="list-group-flush">
+                  {experience.descBullets.map((desc, index) => (
+                    <ListGroup.Item key={index}>{desc}</ListGroup.Item>
+                  ))}
+                </ListGroup>
+              )}
+
             </Card.Text>
           </Card.Body>
         </Card>

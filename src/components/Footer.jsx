@@ -20,7 +20,7 @@ const Footer = ({ resumeBasicInfo }) => {
 
         <div className="copyright py-4 text-center">
           <div className="container">
-            <small>Copyright &copy; Ahmed Mujtaba Butt</small>
+            
           </div>
         </div>
       </div>

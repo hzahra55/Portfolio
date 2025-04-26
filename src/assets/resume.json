@@ -1,16 +1,16 @@
 {
   "basic_info": {
-    "name": "Ahmed Mujtaba Butt",
+    "name": "Huda Zahra",
     "titles": ["Machine Learning Engineer"],
     "contact": [
       {
         "name": "email",
-        "url": "mailto:ahmedmujtababutt02@outlook.com",
+        "url": "mailto:hudazahrabangash@gmail.com",
         "class": "fas fa-envelope"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/ahmed-mujtaba-butt/",
+        "url": "https://www.linkedin.com/in/hudazahraa/",
         "class": "fab fa-linkedin"
       },
       {
@@ -21,34 +21,34 @@
     ]
   },
   "about": {
-    "description_header": "As-salamu Alaykum 👋",
-    "description": "I'm Ahmed Mujtaba Butt a passionate and accomplished Machine Learning Engineer, currently applying my expertise at DiveDeepAI. I graduated with a Gold Medal from NUST, and I love working with AI and ML. My journey includes developing innovative solutions like AI Gallery Genie, a mobile app that revolutionizes image galleries using AI. I'm excited about driving innovation and always open to new opportunities and collaborations. Let’s connect and make amazing things happen together!",
+    "description_header": "",
+    "description": " I'm Huda Zahra, a budding Machine Learning enthusiast and a student at NUST. I love exploring innovative ideas, building projects, and constantly pushing my learning boundaries. I'm excited about the endless possibilities that AI brings and eager to grow, collaborate, and create meaningful impact. Let’s connect and build something amazing together!",
     "image": "profile.png"
   },
   "social": [
     {
       "name": "linkedin",
-      "url": "https://www.linkedin.com/in/ahmed-mujtaba-butt",
+      "url": "https://www.linkedin.com/in/hudazahraa/",
       "class": "fab fa-linkedin"
     },
     {
       "name": "github",
-      "url": "https://github.com/ahmedmbutt",
+      "url": "https://github.com/hzahra55",
       "class": "fab fa-github"
     },
     {
       "name": "medium",
-      "url": "https://medium.com/@ahmedmbutt",
+      "url": "https://medium.com/@h.zahra1472",
       "class": "fab fa-medium"
     },
     {
       "name": "huggingface",
-      "url": "https://huggingface.co/ahmedmbutt",
+      "url": "https://huggingface.co/huda55",
       "class": "fas fa-face-grin-beam"
     },
     {
       "name": "leetcode",
-      "url": "https://leetcode.com/u/ahmedmbutt",
+      "url": "https://leetcode.com/u/hudazahra/",
       "class": "fas fa-link"
     }
   ],
@@ -91,10 +91,6 @@
         "icon": "opencv"
       },
       {
-        "name": "Pillow",
-        "icon": "pillow"
-      },
-      {
         "name": "Scikit-Learn",
         "icon": "scikitlearn"
       },
@@ -126,14 +122,8 @@
         "name": "Tkinter",
         "icon": "tkinter"
       },
-      {
-        "name": "Firebase",
-        "icon": "firebase"
-      },
-      {
-        "name": "Flutter",
-        "icon": "flutter"
-      },
+      
+     
       {
         "name": "MongoDB",
         "icon": "mongodb"
@@ -154,26 +144,17 @@
         "name": "Vite",
         "icon": "vitejs"
       },
-      {
-        "name": "EJS",
-        "icon": "ejs"
-      },
+     
       {
         "name": "jQuery",
         "icon": "jquery"
       },
-      {
-        "name": "MUI",
-        "icon": "materialui"
-      },
+      
       {
         "name": "Bootstrap",
         "icon": "bootstrap"
       },
-      {
-        "name": "Sass",
-        "icon": "sass"
-      },
+      
       {
         "name": "CSS3",
         "icon": "css3"
@@ -182,10 +163,7 @@
         "name": "HTML5",
         "icon": "html5"
       },
-      {
-        "name": "Linux",
-        "icon": "linux"
-      },
+      
       {
         "name": "Conda",
         "icon": "anaconda"
@@ -218,10 +196,7 @@
         "name": "PostgreSQL",
         "icon": "postgresql"
       },
-      {
-        "name": "SQLite",
-        "icon": "sqlite"
-      },
+      
       {
         "name": "MySQL",
         "icon": "mysql"
@@ -238,10 +213,7 @@
         "name": "Python",
         "icon": "python"
       },
-      {
-        "name": "Dart",
-        "icon": "dart"
-      },
+      
       {
         "name": "Java",
         "icon": "java"
@@ -249,10 +221,6 @@
       {
         "name": "C++",
         "icon": "cplusplus"
-      },
-      {
-        "name": "C",
-        "icon": "c"
       }
     ]
   },
@@ -565,89 +533,73 @@
   ],
   "experience": [
     {
-      "companyLogo": "DiveDeepAI.png",
-      "company": "DiveDeepAI",
-      "role": "Junior Machine Learning Engineer",
-      "date": "Aug 2024 - present",
-      "descBullets": []
+      "companyLogo": "marketinglads.png",
+      "company": "The Marketing Lads",
+      "role": "AI Intern",
+      "date": "March 2024 - present",
+      "descBullets": ["Built scalable backend services with FastAPI and FAISS retrieval to support multi-client AI platforms.",
+
+      "Improved frontend UI/UX using React and TypeScript for better user experiences and client onboarding.",
+      
+      "Automated API integrations, web scraping, and data handling workflows using n8n and other AI-driven tools.",
+      
+      "Deployed applications with Docker, GitHub Actions, and Vercel for consistent CI/CD pipelines.",
+      
+      "Integrated new AI technologies like Retrieval-Augmented Generation (RAG) to enhance product capabilities."]
     },
     {
-      "companyLogo": "CloudGate.png",
-      "company": "CloudGate Technologies",
-      "role": "AI Backend Engineer",
-      "date": "Apr 2024 - Jun 2024",
+      "companyLogo": "rohde.png",
+      "company": "Rohde & Schwarz",
+      "role": "Software Engineering Intern",
+      "date": "Aug 2024 - Sep 2024",
       "descBullets": [
-        "Developed pipelines for text-based image generation, instruction-based image editing, background removal, and image variations",
-        "Deployed pipelines on HuggingFace Inference Endpoints for enhanced security and scalability"
+        "Built and optimized secure data pipelines, integrating firewall protection and hardware acceleration for backend systems.",
+
+"Enhanced database operations using PostgreSQL to support critical communication in Air Traffic Control (ATC) applications.",
+
+"Streamlined backend communication layers for faster, stable, and secure network flows.",
+
+"Worked with cross-functional teams on validation, deployment testing, and system security audits"
       ]
     },
     {
-      "companyLogo": "Bizwitt.png",
-      "company": "Bizwitt",
-      "role": "Mobile Backend Developer",
-      "date": "Oct 2023 - Apr 2024",
+      "companyLogo": "Washify.png",
+      "company": "Washify",
+      "role": "Web Developer",
+      "date": "April 202 - Jun 2024",
       "descBullets": [
-        "Developed backend for mobile applications using Flutter",
-        "Implemented Firebase for user authentication and data storage",
-        "Integrated RESTful APIs for data retrieval and manipulation",
-        "Led the development of mobile applications ensuring timely delivery and quality assurance"
+        "Led development of a microservices-based infrastructure using the MERN stack",
+
+"Integrated Firebase for real-time user authentication and backend communication in mobile apps.",
+
+"Designed and tested RESTful APIs with Postman to ensure smooth frontend-backend integration.",
+
+"Optimized system architecture for faster load times, improved responsiveness, and better user experience."
       ]
     },
     {
-      "companyLogo": "OneNetwork.png",
-      "company": "One Network",
-      "role": "IT Intern",
+      "companyLogo": "Secure.png",
+      "company": "Secure Space",
+      "role": "SEO Analyst",
       "date": "Aug 2023 - Sep 2023",
       "descBullets": [
-        "Conducted data cleaning, annotation, and augmentation",
-        "Assisted in developing an Auto-Vehicle Categorization (AVC) project using a semi-supervised learning approach based on YOLOv8",
-        "Supported the deployment of AVC on motorways and toll plazas",
-        "Conducted internal testing of the M-Tag One Network App"
-      ]
-    },
-    {
-      "companyLogo": "Skillibility.png",
-      "company": "Skillibility",
-      "role": "Python Developer",
-      "date": "Sep 2022 - Oct 2022",
-      "descBullets": [
-        "Developed a Python-based Resume Parser module to extract relevant information from resumes",
-        "Achieved an 80-85% accuracy rate after multiple module revisions"
-      ]
-    },
-    {
-      "companyLogo": "PRCS.png",
-      "company": "Pakistan Red Crescent Society",
-      "role": "Student Volunteer",
-      "date": "Aug 2022",
-      "descBullets": [
-        "Raised community awareness on animal welfare",
-        "Conducted interviews with veterinarians about animal cruelty and rights",
-        "Delivered presentations on animal care to orphanage children",
-        "Designed and distributed brochures on animal care and rights"
+        "Conducted SEO audits and performance optimizations using Google Analytics, Google Search Console, and SEO ranking tools.",
+
+"Developed content strategies to improve organic reach, increasing site visibility in targeted search results.",
+
+"Implemented on-page SEO improvements, including metadata optimization, keyword structuring, and content updates.",
+
+"Contributed to driving sustained growth in search engine rankings and overall web traffic."
       ]
     }
   ],
   "education": [
-    {
-      "title": "O Level",
-      "name": "St. Mary's Academy",
-      "years": "2015 - 2018",
-      "grade": "Grades: 5A* 3A 1B",
-      "logo": "SMA.png"
-    },
-    {
-      "title": "A Level",
-      "name": "St. Mary's Academy",
-      "years": "2018 - 2020",
-      "grade": "Grades: 4A*",
-      "logo": "SMA.png"
-    },
+    
     {
       "title": "Bachelor of Engineering in Software Engineering",
       "name": "National University of Sciences & Technology (NUST)",
-      "years": "Nov 2020 - present",
-      "grade": "CGPA: 3.91",
+      "years": "Nov 2021 - present",
+      "grade": "CGPA: 3.50",
       "logo": "NUST.png"
     }
   ]
