@@ -226,26 +226,19 @@
   },
   "projects": [
     {
-      "title": "Heart Health Management System",
+      "title": "SpeechSmart",
       "startDate": "Spring 2024",
-      "description": "A mobile application that predicts the risk of heart diseases by analyzing the user's health data and provides personalized recommendations to improve heart health",
+      "description": "A web application that that analyzes and improves children's pronunciation by comparing their speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
       "images": [
-        "heart-health-management-system/hhms-1.png",
-        "heart-health-management-system/hhms-2.png",
-        "heart-health-management-system/hhms-3.png",
-        "heart-health-management-system/hhms-4.png",
-        "heart-health-management-system/hhms-5.png"
+        "heart-health-management-system/hhms-1.png"
       ],
-      "url": "https://github.com/ahmedmbutt/Heart-Health-Management-System",
+      "url": "https://github.com/hzahra55/speech_to_text_SPEECHSMART",
       "technologies": [
         {
-          "class": "devicon-dart-plain",
-          "name": "Dart"
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
         },
-        {
-          "class": "devicon-flutter-plain",
-          "name": "Flutter"
-        },
+        
         {
           "class": "devicon-python-plain",
           "name": "Python"
@@ -254,10 +247,7 @@
           "class": "devicon-fastapi-plain",
           "name": "FastAPI"
         },
-        {
-          "class": "devicon-scikitlearn-plain",
-          "name": "scikit-learn"
-        },
+        
         {
           "class": "devicon-docker-plain",
           "name": "Docker"
@@ -265,14 +255,14 @@
       ]
     },
     {
-      "title": "Hep2 Image Segmentation",
-      "startDate": "Fall 2023",
-      "description": "Segmentation of Hep2 images using traditional image processing techniques and deep learning models",
+      "title": "Youtube Gesture Control ",
+      "startDate": "Spring 2025",
+      "description": "Control YouTube videos using machine learning. By using the Jester dataset and training a ResNet-101 model, the system can interpret ten distinct gestures in real-time through the webcam corresponding to various video control functionalities",
       "images": [
-        "hep-images-segmentation/his-1.png",
-        "hep-images-segmentation/his-2.png"
+        "hep-images-segmentation/his-1.png"
+       
       ],
-      "url": "https://github.com/ahmedmbutt/Hep2-Images-Segmentation",
+      "url": "https://github.com/hzahra55/HandControl_gesture_recognition",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -289,19 +279,18 @@
       ]
     },
     {
-      "title": "Employee Attrition Prediction",
-      "startDate": "Fall 2023",
-      "description": "A machine learning model to predict the attrition rate of employees in a company by performing data preprocessing, exploratory data analysis, model selection and evaluation",
+      "title": "Github Repos Scraper for Trend Analysis",
+      "startDate": "Fall 2024",
+      "description": "Scraping GitHub repositories across multiple topics using BeautifulSoup. Extract repository metadata, tags and star counts, and analyze and visualize the popularity of these tags based on the stars",
       "images": [
-        "employee-attrition-prediction/eap-1.png",
-        "employee-attrition-prediction/eap-2.png",
-        "employee-attrition-prediction/eap-3.png"
+        "employee-attrition-prediction/eap-1.png"
+        
       ],
-      "url": "https://github.com/ahmedmbutt/Employee-Attrition-Prediction",
+      "url": "https://github.com/hzahra55/GitHub-repos-scraper",
       "technologies": [
         {
-          "class": "devicon-scikitlearn-plain",
-          "name": "scikit-learn"
+          "class": "devicon-python-plain",
+          "name": "Python"
         },
         {
           "class": "devicon-matplotlib-plain",
@@ -314,20 +303,22 @@
         {
           "class": "devicon-numpy-plain",
           "name": "NumPy"
+        },
+        {
+          "class": "devicon-beautifulsoup-plain",
+          "name": "BeautifulSoup"
         }
       ]
     },
     {
       "title": "Portfolio Website",
-      "startDate": "Summer 2023",
-      "description": "The website you're currently on!",
+      "startDate": "Summer 2025",
+      "description": "current website",
       "images": [
-        "portfolio-website/pw-1.png",
-        "portfolio-website/pw-2.png",
-        "portfolio-website/pw-3.png",
+        
         "portfolio-website/pw-4.png"
       ],
-      "url": "https://github.com/ahmedmbutt/portfolio",
+      "url": "https://github.com/hzahra55/Portfolio",
       "technologies": [
         {
           "class": "devicon-javascript-plain",
@@ -348,15 +339,14 @@
       ]
     },
     {
-      "title": "Heart Failure Prediction",
-      "startDate": "Spring 2023",
-      "description": "A machine learning model to predict the mortality rate of patients suffering from heart failure by evaluating various machine learning algorithms and selecting the best one",
+      "title": "Lip Reading Model",
+      "startDate": "Spring 2024",
+      "description": "This project implements a Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
       "images": [
-        "heart-failure-prediction/hfp-1.png",
-        "heart-failure-prediction/hfp-2.png",
+       
         "heart-failure-prediction/hfp-3.png"
       ],
-      "url": "https://github.com/ahmedmbutt/Heart-Failure-Prediction",
+      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -365,29 +355,12 @@
       ]
     },
     {
-      "title": "File Explorer",
-      "startDate": "Spring 2023",
-      "description": "A file explorer application which allows the user to navigate through the files and folders of their system and perform various operations on them while also providing various keyboard shortcuts",
-      "images": ["file-explorer/fe-1.png", "file-explorer/fe-2.png"],
-      "url": "https://github.com/ahmedmbutt/FileXplorer",
-      "technologies": [
-        {
-          "class": "devicon-java-plain",
-          "name": "Java"
-        }
-      ]
-    },
-    {
       "title": "Department Dashboard",
       "startDate": "Fall 2022",
       "description": "A dashboard for the department of Software Engineering at NUST which allows students to view their grades, attendance, and other information, allows the teachers to upload grades and attendance, and allows the admin to manage the users",
       "images": [
-        "department-dashboard/dd-1.png",
-        "department-dashboard/dd-2.png",
-        "department-dashboard/dd-3.png",
-        "department-dashboard/dd-4.png",
-        "department-dashboard/dd-5.png",
-        "department-dashboard/dd-6.png"
+        "department-dashboard/dd-1.png"
+        
       ],
       "url": "https://github.com/ahmedmbutt/DepartmentDashboard",
       "technologies": [
@@ -431,15 +404,15 @@
       ]
     },
     {
-      "title": "Chat Application",
-      "startDate": "Spring 2022",
-      "description": "A chat application with a server and multiple clients",
+      "title": "LANGCHAIN AI BOT ",
+      "startDate": "Spring 2025",
+      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
       "images": ["chat-application/ca-1.png"],
-      "url": "https://github.com/ahmedmbutt/Chat-Application",
+      "url": "https://github.com/hzahra55/Langchain_AIBot",
       "technologies": [
         {
-          "class": "devicon-java-plain",
-          "name": "Java"
+          "class": "devicon-python-plain",
+          "name": "Python"
         }
       ]
     },
@@ -469,67 +442,23 @@
     },
     {
       "title": "2048 AI",
-      "startDate": "Summer 2021",
-      "description": "2048 game clone with an AI developed using the Minimax Algorithm with Alpha-Beta Pruning",
+      "startDate": "Summer 2025",
+      "description": "This Streamlit app simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. can adjust gamma and iterations with slider",
       "images": ["2048-ai/ai-1.png"],
-      "url": "https://github.com/ahmedmbutt/2048-AI",
+      "url": "https://github.com/hzahra55/RobotCar_RL_MDP",
       "technologies": [
         {
-          "class": "devicon-java-plain",
-          "name": "Java"
-        }
-      ]
-    },
-    {
-      "title": "Metal Detector (Simulation)",
-      "startDate": "Spring 2021",
-      "description": "A simulation of a Metal Detector using Proteus",
-      "images": ["metal-detector/md-1.png"],
-      "url": "",
-      "technologies": []
-    },
-    {
-      "title": "DSLR Camera (Orthographic Projection)",
-      "startDate": "Spring 2021",
-      "description": "An orthographic projection of a DSLR Camera using AutoCAD",
-      "images": ["camera-projection/cp-1.png"],
-      "url": "",
-      "technologies": []
-    },
-    {
-      "title": "Supermarket Management System",
-      "startDate": "Spring 2021",
-      "description": "A desktop management system app for any Supermarket implemented using Object-Oriented Programming concepts and File handling",
-      "images": [
-        "supermarket-management-system/sms-1.png",
-        "supermarket-management-system/sms-2.png",
-        "supermarket-management-system/sms-3.png"
-      ],
-      "url": "https://github.com/ahmedmbutt/SuperMarketManagementSystem",
-      "technologies": [
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
         {
-          "class": "devicon-java-plain",
-          "name": "Java"
-        }
-      ]
-    },
-    {
-      "title": "Entertainment System",
-      "startDate": "Fall 2020",
-      "description": "A command line interface project which allows an admin or a user to either Enter, Search, or Delete a record under the category of Music, Movie or Series",
-      "images": [
-        "entertainment-system/es-1.png",
-        "entertainment-system/es-2.png",
-        "entertainment-system/es-3.png"
-      ],
-      "url": "https://github.com/ahmedmbutt/Entertainment-System",
-      "technologies": [
-        {
-          "class": "devicon-cplusplus-plain",
-          "name": "C++"
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+
         }
       ]
     }
+    
   ],
   "experience": [
     {
