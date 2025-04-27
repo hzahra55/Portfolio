@@ -12,11 +12,6 @@
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/hudazahraa/",
         "class": "fab fa-linkedin"
-      },
-      {
-        "name": "instagram",
-        "url": "https://www.instagram.com/ahmedmbutt/",
-        "class": "fab fa-instagram"
       }
     ]
   },
