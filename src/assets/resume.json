@@ -221,7 +221,7 @@
   },
   "projects": [
     {
-      "title": "SpeechSmart",
+      "title": "speech-to-text-SpeechSmart",
       "startDate": "Spring 2024",
       "description": "A web application that that analyzes and improves children's pronunciation by comparing their speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
       "images": [
