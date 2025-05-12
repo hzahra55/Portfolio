@@ -99,8 +99,8 @@ packages:
     resolution: {integrity: sha512-dkdMCN3py0+ksCgYmGG8jKeGA/8Tk+gJwSYYlFGxG5lmhfKNoAy004YpLxpS1W2J8m/EK2Ew+yOs9pVRwO89mg==}
     engines: {node: '>=6.9.0'}
 
-  '@babel/runtime@7.23.1':
-    resolution: {integrity: sha512-hC2v6p8ZSI/W0HUzh3V8C5g+NwSKzKPtJwSpTjwl0o297GP9+ZLQSkdvHz46CM3LqyoXxq+5G9komY+eSqSO0g==}
+  '@babel/runtime@7.27.0':
+    resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
     engines: {node: '>=6.9.0'}
 
   '@babel/types@7.23.0':
@@ -1611,7 +1611,7 @@ snapshots:
       chalk: 2.4.2
       js-tokens: 4.0.0
 
-  '@babel/runtime@7.23.1':
+  '@babel/runtime@7.27.0':
     dependencies:
       regenerator-runtime: 0.14.0
 
@@ -1624,7 +1624,7 @@ snapshots:
   '@emotion/babel-plugin@11.11.0':
     dependencies:
       '@babel/helper-module-imports': 7.22.15
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       '@emotion/hash': 0.9.1
       '@emotion/memoize': 0.8.1
       '@emotion/serialize': 1.1.2
@@ -1649,7 +1649,7 @@ snapshots:
 
   '@emotion/react@11.11.1(@types/react@18.2.23)(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       '@emotion/babel-plugin': 11.11.0
       '@emotion/cache': 11.11.0
       '@emotion/serialize': 1.1.2
@@ -1817,7 +1817,7 @@ snapshots:
 
   '@restart/ui@1.6.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       '@popperjs/core': 2.11.8
       '@react-aria/ssr': 3.8.0(react@18.2.0)
       '@restart/hooks': 0.4.11(react@18.2.0)
@@ -2058,7 +2058,7 @@ snapshots:
 
   babel-plugin-macros@3.1.0:
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       cosmiconfig: 7.1.0
       resolve: 1.22.6
 
@@ -2173,7 +2173,7 @@ snapshots:
 
   dom-helpers@5.2.1:
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       csstype: 3.1.2
 
   error-ex@1.3.2:
@@ -2820,7 +2820,7 @@ snapshots:
 
   react-bootstrap@2.9.0(@types/react@18.2.23)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       '@restart/hooks': 0.4.11(react@18.2.0)
       '@restart/ui': 1.6.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/react-transition-group': 4.4.7
@@ -2865,7 +2865,7 @@ snapshots:
 
   react-transition-group@4.4.5(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -3115,7 +3115,7 @@ snapshots:
 
   uncontrollable@7.2.1(react@18.2.0):
     dependencies:
-      '@babel/runtime': 7.23.1
+      '@babel/runtime': 7.27.0
       '@types/react': 18.2.23
       invariant: 2.2.4
       react: 18.2.0
