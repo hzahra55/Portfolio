@@ -1,0 +1,98 @@
+body[data-theme="light"] {
+  @import "../light-slider.module.scss";
+
+  .slider-tab {
+    background-color: #d7caaa;
+  }
+
+  .title-styles {
+    color: black;
+  }
+
+  .header-icon {
+    color: black;
+  }
+
+  .slider-image {
+    border: 5px solid #d7caaa;
+  }
+
+  .language {
+    background-color: black;
+  }
+
+  .link-href {
+    color: black;
+  }
+
+  .project-date {
+    background-color: #696969;
+    color: white;
+  }
+
+  header {
+    background-color: #e9d5a1;
+    h1 {
+      color: #353239;
+    }
+  }
+
+  #about {
+    background-color: #fff;
+    h1 span {
+      color: black;
+    }
+    .polaroid span {
+      background: #ffffff;
+    }
+    .card {
+      background: #fff;
+      color: black;
+    }
+  }
+
+  #portfolio {
+    background: #efe1bd;
+    .section-title {
+      color: black !important;
+    }
+    .foto div {
+      background: #ffffff;
+    }
+    .project-title-settings {
+      color: black;
+    }
+
+    .experience-badge {
+      background-color: #f9f5e9 !important;
+      color: black;
+    }
+
+    .main-badge {
+      background-color: #ae944f !important;
+    }
+
+    .vertical-timeline-element-date {
+      color: black;
+    }
+
+    .vertical-timeline-element-subtitle {
+      color: #ae944f;
+    }
+
+    @media only screen and (max-width: 1169px) {
+      .vertical-timeline-element-date {
+        color: black;
+      }
+    }
+  }
+
+  .modal-inside .modal-content {
+    background: white;
+    color: black;
+  }
+
+  .close-icon {
+    color: black;
+  }
+}

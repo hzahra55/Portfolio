@@ -1,0 +1,530 @@
+{
+  "basic_info": {
+    "name": "Huda Zahra",
+    "titles": ["Machine Learning Engineer"],
+    "contact": [
+      {
+        "name": "email",
+        "url": "mailto:hudazahrabangash@gmail.com",
+        "class": "fas fa-envelope"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/hudazahraa/",
+        "class": "fab fa-linkedin"
+      }
+    ]
+  },
+  "about": {
+    "description_header": "",
+    "description": " I'm Huda Zahra, a budding Machine Learning enthusiast and a student at NUST. I love exploring innovative ideas, building projects, and constantly pushing my learning boundaries. I'm excited about the endless possibilities that AI brings and eager to grow, collaborate, and create meaningful impact. Let’s connect and build something amazing together!",
+    "image": "profile.png"
+  },
+  "social": [
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/hudazahraa/",
+      "class": "fab fa-linkedin"
+    },
+    {
+      "name": "github",
+      "url": "https://github.com/hzahra55",
+      "class": "fab fa-github"
+    },
+    {
+      "name": "medium",
+      "url": "https://medium.com/@hudazahrabangash",
+      "class": "fab fa-medium"
+    },
+    {
+      "name": "huggingface",
+      "url": "https://huggingface.co/huda55",
+      "class": "fas fa-face-grin-beam"
+    },
+    {
+      "name": "leetcode",
+      "url": "https://leetcode.com/u/hudazahra/",
+      "class": "fas fa-link"
+    }
+  ],
+  "skills": {
+    "icons": [
+      {
+        "name": "Hugging Face",
+        "icon": "huggingface"
+      },
+      {
+        "name": "PyTorch",
+        "icon": "pytorch"
+      },
+      {
+        "name": "TensorFlow",
+        "icon": "tensorflow"
+      },
+      {
+        "name": "Keras",
+        "icon": "keras"
+      },
+      {
+        "name": "Docker",
+        "icon": "docker"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "fastapi"
+      },
+      {
+        "name": "Django",
+        "icon": "django"
+      },
+      {
+        "name": "Flask",
+        "icon": "flask"
+      },
+      {
+        "name": "OpenCV",
+        "icon": "opencv"
+      },
+      {
+        "name": "Scikit-Learn",
+        "icon": "scikitlearn"
+      },
+      {
+        "name": "SciPy",
+        "icon": "scipy"
+      },
+      {
+        "name": "Seaborn",
+        "icon": "seaborn"
+      },
+      {
+        "name": "Matplotlib",
+        "icon": "matplotlib"
+      },
+      {
+        "name": "NumPy",
+        "icon": "numpy"
+      },
+      {
+        "name": "Pandas",
+        "icon": "pandas"
+      },
+      {
+        "name": "Gradio",
+        "icon": "gradio"
+      },
+      {
+        "name": "Tkinter",
+        "icon": "tkinter"
+      },
+      
+     
+      {
+        "name": "MongoDB",
+        "icon": "mongodb"
+      },
+      {
+        "name": "Express.js",
+        "icon": "express"
+      },
+      {
+        "name": "React",
+        "icon": "react"
+      },
+      {
+        "name": "Node.js",
+        "icon": "nodejs"
+      },
+      {
+        "name": "Vite",
+        "icon": "vitejs"
+      },
+     
+      {
+        "name": "jQuery",
+        "icon": "jquery"
+      },
+      
+      {
+        "name": "Bootstrap",
+        "icon": "bootstrap"
+      },
+      
+      {
+        "name": "CSS3",
+        "icon": "css3"
+      },
+      {
+        "name": "HTML5",
+        "icon": "html5"
+      },
+      
+      {
+        "name": "Conda",
+        "icon": "anaconda"
+      },
+      {
+        "name": "Git",
+        "icon": "git"
+      },
+      {
+        "name": "LaTeX",
+        "icon": "latex"
+      },
+      {
+        "name": "Assembly",
+        "icon": "assembly"
+      },
+      {
+        "name": "Visual Basic",
+        "icon": "visualbasic"
+      },
+      {
+        "name": "MATLAB",
+        "icon": "matlab"
+      },
+      {
+        "name": "AutoCAD",
+        "icon": "autocad"
+      },
+      {
+        "name": "PostgreSQL",
+        "icon": "postgresql"
+      },
+      
+      {
+        "name": "MySQL",
+        "icon": "mysql"
+      },
+      {
+        "name": "SQL",
+        "icon": "microsoftsqlserver"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "javascript"
+      },
+      {
+        "name": "Python",
+        "icon": "python"
+      },
+      
+      {
+        "name": "Java",
+        "icon": "java"
+      },
+      {
+        "name": "C++",
+        "icon": "cplusplus"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "speech-to-text-SpeechSmart",
+      "startDate": "Spring 2024",
+      "description": "A web application that that analyzes and improves children's pronunciation by comparing their speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
+      "images": [
+        "heart-health-management-system/hhms-1.png"
+      ],
+      "url": "https://github.com/hzahra55/speech_to_text_SPEECHSMART",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-fastapi-plain",
+          "name": "FastAPI"
+        },
+        
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "title": "Youtube Gesture Control ",
+      "startDate": "Spring 2025",
+      "description": "Control YouTube videos using machine learning. By using the Jester dataset and training a ResNet-101 model, the system can interpret ten distinct gestures in real-time through the webcam corresponding to various video control functionalities",
+      "images": [
+        "hep-images-segmentation/his-1.png"
+       
+      ],
+      "url": "https://github.com/hzahra55/HandControl_gesture_recognition",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV"
+        },
+        {
+          "class": "devicon-keras-plain",
+          "name": "Keras"
+        }
+      ]
+    },
+    {
+      "title": "Github Repos Scraper for Trend Analysis",
+      "startDate": "Fall 2024",
+      "description": "Scraping GitHub repositories across multiple topics using BeautifulSoup. Extract repository metadata, tags and star counts, and analyze and visualize the popularity of these tags based on the stars",
+      "images": [
+        "employee-attrition-prediction/eap-1.png"
+        
+      ],
+      "url": "https://github.com/hzahra55/GitHub-repos-scraper",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-matplotlib-plain",
+          "name": "Matplotlib"
+        },
+        {
+          "class": "devicon-pandas-plain",
+          "name": "pandas"
+        },
+        {
+          "class": "devicon-numpy-plain",
+          "name": "NumPy"
+        },
+        {
+          "class": "devicon-beautifulsoup-plain",
+          "name": "BeautifulSoup"
+        }
+      ]
+    },
+    {
+      "title": "Portfolio Website",
+      "startDate": "Summer 2025",
+      "description": "current website",
+      "images": [
+        
+        "portfolio-website/pw-4.png"
+      ],
+      "url": "https://github.com/hzahra55/Portfolio",
+      "technologies": [
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-sass-plain",
+          "name": "Sass"
+        },
+        {
+          "class": "devicon-bootstrap-plain",
+          "name": "Bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "Lip Reading Model",
+      "startDate": "Spring 2024",
+      "description": "This project implements a Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
+      "images": [
+       
+        "heart-failure-prediction/hfp-3.png"
+      ],
+      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "Department Dashboard",
+      "startDate": "Fall 2022",
+      "description": "A dashboard for the department of Software Engineering at NUST which allows students to view their grades, attendance, and other information, allows the teachers to upload grades and attendance, and allows the admin to manage the users",
+      "images": [
+        "department-dashboard/dd-1.png"
+        
+      ],
+      "url": "https://github.com/ahmedmbutt/DepartmentDashboard",
+      "technologies": [
+        {
+          "class": "devicon-mongodb-plain",
+          "name": "MongoDB"
+        },
+        {
+          "class": "devicon-express-original",
+          "name": "Express.js"
+        },
+        {
+          "class": "devicon-react-plain",
+          "name": "React"
+        },
+        {
+          "class": "devicon-nodejs-plain",
+          "name": "Node.js"
+        },
+        {
+          "class": "devicon-redux-plain",
+          "name": "Redux"
+        },
+        {
+          "class": "devicon-materialui-plain",
+          "name": "MUI"
+        }
+      ]
+    },
+    {
+      "title": "CMS Notifier",
+      "startDate": "Summer 2022",
+      "description": "A notifier for the CMS website of NUST which notifies the user for any changes in the website",
+      "images": ["cms-notifier/cn-1.png"],
+      "url": "https://github.com/ahmedmbutt/CMS-Notifier",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "LANGCHAIN AI BOT ",
+      "startDate": "Spring 2025",
+      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
+      "images": ["chat-application/ca-1.png"],
+      "url": "https://github.com/hzahra55/Langchain_AIBot",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
+      "title": "Sales & Inventory Management System",
+      "startDate": "Fall 2021",
+      "description": "A management system to handle sales & inventory with database connectivity",
+      "images": [
+        "sales-inventory-management-system/sims-1.png",
+        "sales-inventory-management-system/sims-2.png",
+        "sales-inventory-management-system/sims-3.png",
+        "sales-inventory-management-system/sims-4.png",
+        "sales-inventory-management-system/sims-5.png",
+        "sales-inventory-management-system/sims-6.png"
+      ],
+      "url": "https://github.com/ahmedmbutt/Sales-Inventory-Management-System",
+      "technologies": [
+        {
+          "class": "devicon-java-plain",
+          "name": "Java"
+        },
+        {
+          "class": "devicon-microsoftsqlserver-plain",
+          "name": "SQL"
+        }
+      ]
+    },
+    {
+      "title": "2048 AI",
+      "startDate": "Summer 2025",
+      "description": "This Streamlit app simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. can adjust gamma and iterations with slider",
+      "images": ["2048-ai/ai-1.png"],
+      "url": "https://github.com/hzahra55/RobotCar_RL_MDP",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-javascript-plain",
+          "name": "JavaScript"
+
+        }
+      ]
+    }
+    
+  ],
+  "experience": [
+    {
+      "companyLogo": "marketinglads.png",
+      "company": "The Marketing Lads",
+      "role": "AI Intern",
+      "date": "March 2024 - present",
+      "descBullets": ["Built scalable backend services with FastAPI and FAISS retrieval to support multi-client AI platforms.",
+
+      "Improved frontend UI/UX using React and TypeScript for better user experiences and client onboarding.",
+      
+      "Automated API integrations, web scraping, and data handling workflows using n8n and other AI-driven tools.",
+      
+      "Deployed applications with Docker, GitHub Actions, and Vercel for consistent CI/CD pipelines.",
+      
+      "Integrated new AI technologies like Retrieval-Augmented Generation (RAG) to enhance product capabilities."]
+    },
+    {
+      "companyLogo": "rohde.png",
+      "company": "Rohde & Schwarz",
+      "role": "Software Engineering Intern",
+      "date": "Aug 2024 - Sep 2024",
+      "descBullets": [
+        "Built and optimized secure data pipelines, integrating firewall protection and hardware acceleration for backend systems.",
+
+"Enhanced database operations using PostgreSQL to support critical communication in Air Traffic Control (ATC) applications.",
+
+"Streamlined backend communication layers for faster, stable, and secure network flows.",
+
+"Worked with cross-functional teams on validation, deployment testing, and system security audits"
+      ]
+    },
+    {
+      "companyLogo": "Washify.png",
+      "company": "Washify",
+      "role": "Web Developer",
+      "date": "April 202 - Jun 2024",
+      "descBullets": [
+        "Led development of a microservices-based infrastructure using the MERN stack",
+
+"Integrated Firebase for real-time user authentication and backend communication in mobile apps.",
+
+"Designed and tested RESTful APIs with Postman to ensure smooth frontend-backend integration.",
+
+"Optimized system architecture for faster load times, improved responsiveness, and better user experience."
+      ]
+    },
+    {
+      "companyLogo": "Secure.png",
+      "company": "Secure Space",
+      "role": "SEO Analyst",
+      "date": "Aug 2023 - Sep 2023",
+      "descBullets": [
+        "Conducted SEO audits and performance optimizations using Google Analytics, Google Search Console, and SEO ranking tools.",
+
+"Developed content strategies to improve organic reach, increasing site visibility in targeted search results.",
+
+"Implemented on-page SEO improvements, including metadata optimization, keyword structuring, and content updates.",
+
+"Contributed to driving sustained growth in search engine rankings and overall web traffic."
+      ]
+    }
+  ],
+  "education": [
+    
+    {
+      "title": "Bachelor of Engineering in Software Engineering",
+      "name": "National University of Sciences & Technology (NUST)",
+      "years": "Nov 2021 - present",
+      "grade": "CGPA: 3.50",
+      "logo": "NUST.png"
+    }
+  ]
+}
