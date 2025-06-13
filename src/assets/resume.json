@@ -54,6 +54,10 @@
         "icon": "huggingface"
       },
       {
+        "name": "LangChain",
+        "icon": "langchain"
+      },
+      {
         "name": "PyTorch",
         "icon": "pytorch"
       },
@@ -221,9 +225,9 @@
   },
   "projects": [
     {
-      "title": "speech-to-text-SpeechSmart",
+      "title": "SpeechSmart - STT",
       "startDate": "Spring 2024",
-      "description": "A web application that that analyzes and improves children's pronunciation by comparing their speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
+      "description": "VoskAPI - Comparing speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
       "images": [
         "heart-health-management-system/hhms-1.png"
       ],
@@ -250,9 +254,33 @@
       ]
     },
     {
-      "title": "Youtube Gesture Control ",
-      "startDate": "Spring 2025",
-      "description": "Control YouTube videos using machine learning. By using the Jester dataset and training a ResNet-101 model, the system can interpret ten distinct gestures in real-time through the webcam corresponding to various video control functionalities",
+      "title": "Gesture Control ",
+      "startDate": "Fall 2024",
+      "description": "Resnet101 - Control YouTube videos using machine learning. By using the Jester dataset and training a ResNet-101 model, the system can interpret ten distinct gestures in real-time through the webcam corresponding to various video control functionalities",
+      "images": [
+        "hep-images-segmentation/his-1.png"
+       
+      ],
+      "url": "https://github.com/hzahra55/HandControl_gesture_recognition",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "class": "devicon-opencv-plain",
+          "name": "OpenCV"
+        },
+        {
+          "class": "devicon-keras-plain",
+          "name": "Keras"
+        }
+      ]
+    },
+    {
+      "title": " Hep_Segmentation & Classification ",
+      "startDate": "Fall 2024",
+      "description": "Python for segmentation + Train  CNN for classfication",
       "images": [
         "hep-images-segmentation/his-1.png"
        
@@ -334,63 +362,14 @@
       ]
     },
     {
-      "title": "Lip Reading Model",
+      "title": "VSP- Silent STT",
       "startDate": "Spring 2024",
-      "description": "This project implements a Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
+      "description": "Visual Speech Recognition - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
       "images": [
        
         "heart-failure-prediction/hfp-3.png"
       ],
       "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        }
-      ]
-    },
-    {
-      "title": "Department Dashboard",
-      "startDate": "Fall 2022",
-      "description": "A dashboard for the department of Software Engineering at NUST which allows students to view their grades, attendance, and other information, allows the teachers to upload grades and attendance, and allows the admin to manage the users",
-      "images": [
-        "department-dashboard/dd-1.png"
-        
-      ],
-      "url": "https://github.com/ahmedmbutt/DepartmentDashboard",
-      "technologies": [
-        {
-          "class": "devicon-mongodb-plain",
-          "name": "MongoDB"
-        },
-        {
-          "class": "devicon-express-original",
-          "name": "Express.js"
-        },
-        {
-          "class": "devicon-react-plain",
-          "name": "React"
-        },
-        {
-          "class": "devicon-nodejs-plain",
-          "name": "Node.js"
-        },
-        {
-          "class": "devicon-redux-plain",
-          "name": "Redux"
-        },
-        {
-          "class": "devicon-materialui-plain",
-          "name": "MUI"
-        }
-      ]
-    },
-    {
-      "title": "CMS Notifier",
-      "startDate": "Summer 2022",
-      "description": "A notifier for the CMS website of NUST which notifies the user for any changes in the website",
-      "images": ["cms-notifier/cn-1.png"],
-      "url": "https://github.com/ahmedmbutt/CMS-Notifier",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -412,16 +391,12 @@
       ]
     },
     {
-      "title": "Sales & Inventory Management System",
-      "startDate": "Fall 2021",
+      "title": "Library Management System",
+      "startDate": "Fall 2022",
       "description": "A management system to handle sales & inventory with database connectivity",
       "images": [
-        "sales-inventory-management-system/sims-1.png",
-        "sales-inventory-management-system/sims-2.png",
-        "sales-inventory-management-system/sims-3.png",
-        "sales-inventory-management-system/sims-4.png",
-        "sales-inventory-management-system/sims-5.png",
-        "sales-inventory-management-system/sims-6.png"
+        "sales-inventory-management-system/sims-1.png"
+        
       ],
       "url": "https://github.com/ahmedmbutt/Sales-Inventory-Management-System",
       "technologies": [
@@ -522,7 +497,7 @@
     {
       "title": "Bachelor of Engineering in Software Engineering",
       "name": "National University of Sciences & Technology (NUST)",
-      "years": "Nov 2021 - May 2025",
+      "years": "Nov 21 - May 25",
       "grade": "CGPA: 3.52",
       "logo": "NUST.png"
     }
