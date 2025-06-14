@@ -163,9 +163,9 @@
 
 import React, { useState } from "react";
 import ProjectDetailsModal from "./ProjectDetailsModal";
-import projectData from "../data/projects.json";
+import propTypes from "prop-types";
 
-const Projects = () => {
+const Projects = ({ resumeProjects }) => {
   const [modalShow, setModalShow] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
 
@@ -174,12 +174,14 @@ const Projects = () => {
     setModalShow(true);
   };
 
+  if (!resumeProjects) return null;
+
   return (
     <section id="projects" className="section-projects py-5">
       <div className="container">
         <h2 className="text-center mb-4">Projects</h2>
         <div className="row">
-          {projectData.map((project, index) => (
+          {resumeProjects.map((project, index) => (
             <div
               className="col-md-4 mb-4"
               key={index}
@@ -192,28 +194,23 @@ const Projects = () => {
                   alt={project.title}
                   className="card-img-top project-image"
                 />
-                {/* <div className="card-body">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text text-muted">{project.startDate}</p>
-                </div> */}
                 <div className="card-body d-flex justify-content-between align-items-center">
-  <div>
-    <h5 className="card-title mb-1">{project.title}</h5>
-    <p className="card-text text-muted">{project.startDate}</p>
-  </div>
-  {project.url && (
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="text-dark"
-      onClick={(e) => e.stopPropagation()} // prevents modal from opening when clicking icon
-    >
-      <i className="fab fa-github fa-lg"></i>
-    </a>
-  )}
-</div>
-
+                  <div>
+                    <h5 className="card-title mb-1">{project.title}</h5>
+                    <p className="card-text text-muted">{project.startDate}</p>
+                  </div>
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-dark"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <i className="fab fa-github fa-lg"></i>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
@@ -228,6 +225,10 @@ const Projects = () => {
       </div>
     </section>
   );
+};
+
+Projects.propTypes = {
+  resumeProjects: propTypes.array,
 };
 
 export default Projects;
