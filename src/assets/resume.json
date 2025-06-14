@@ -362,7 +362,7 @@
       ]
     },
     {
-      "title": "VSP- Silent STT",
+      "title": "VSR- Silent STT",
       "startDate": "Spring 2024",
       "description": "Visual Speech Recognition - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
       "images": [
@@ -378,7 +378,7 @@
       ]
     },
     {
-      "title": "LANGCHAIN AI BOT ",
+      "title": "LANGCHAIN Medico BOT ",
       "startDate": "Spring 2025",
       "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
       "images": ["chat-application/ca-1.png"],
@@ -393,7 +393,7 @@
     {
       "title": "Library Management System",
       "startDate": "Fall 2022",
-      "description": "A management system to handle sales & inventory with database connectivity",
+      "description": "A management system of Library with database connectivity",
       "images": [
         "sales-inventory-management-system/sims-1.png"
         
@@ -413,7 +413,7 @@
     {
       "title": "2048 AI",
       "startDate": "Summer 2025",
-      "description": "This Streamlit app simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. can adjust gamma and iterations with slider",
+      "description": "Simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. can adjust gamma and iterations with slider",
       "images": ["2048-ai/ai-1.png"],
       "url": "https://github.com/hzahra55/RobotCar_RL_MDP",
       "technologies": [
@@ -436,13 +436,11 @@
       "company": "The Marketing Lads",
       "role": "AI Intern",
       "date": "March 2024 - present",
-      "descBullets": ["Built scalable backend services with FastAPI and FAISS retrieval to support multi-client AI platforms.",
-
-      "Improved frontend UI/UX using React and TypeScript for better user experiences and client onboarding.",
+      "descBullets": ["Built scalable backend services with FastAPI and vectoredatabases to support multi-client AI platforms.",
       
       "Automated API integrations, web scraping, and data handling workflows using n8n and other AI-driven tools.",
       
-      "Deployed applications with Docker, GitHub Actions, and Vercel for consistent CI/CD pipelines.",
+      "Deployed applications with Docker, GitHub Actions, and GCP for consistent CI/CD pipelines.",
       
       "Integrated new AI technologies like Retrieval-Augmented Generation (RAG) to enhance product capabilities."]
     },
@@ -456,8 +454,6 @@
 
 "Enhanced database operations using PostgreSQL to support critical communication in Air Traffic Control (ATC) applications.",
 
-"Streamlined backend communication layers for faster, stable, and secure network flows.",
-
 "Worked with cross-functional teams on validation, deployment testing, and system security audits"
       ]
     },
@@ -469,26 +465,9 @@
       "descBullets": [
         "Led development of a microservices-based infrastructure using the MERN stack",
 
-"Integrated Firebase for real-time user authentication and backend communication in mobile apps.",
-
-"Designed and tested RESTful APIs with Postman to ensure smooth frontend-backend integration.",
+"Designed and tested RESTful APIs to ensure smooth frontend-backend integration.",
 
 "Optimized system architecture for faster load times, improved responsiveness, and better user experience."
-      ]
-    },
-    {
-      "companyLogo": "Secure.png",
-      "company": "Secure Space",
-      "role": "SEO Analyst",
-      "date": "Aug 2023 - Sep 2023",
-      "descBullets": [
-        "Conducted SEO audits and performance optimizations using Google Analytics, Google Search Console, and SEO ranking tools.",
-
-"Developed content strategies to improve organic reach, increasing site visibility in targeted search results.",
-
-"Implemented on-page SEO improvements, including metadata optimization, keyword structuring, and content updates.",
-
-"Contributed to driving sustained growth in search engine rankings and overall web traffic."
       ]
     }
   ],
