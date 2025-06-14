@@ -735,40 +735,51 @@ header {
 }
 
 .hero-section {
-  background-color: #242828;
-  color: white;
+  background-color: #242828 !important;
+  padding-top: 40px;
+  padding-bottom: 20px;
 
-  .profile-image {
-    transition: transform 0.3s ease;
+  h1, h4 {
+    color: white !important;
+  }
+
+  .resume-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+
     &:hover {
-      transform: scale(1.05);
+      transform: translateY(-2px);
+      background-color: #f8f9fa;
     }
   }
 
   .animated-title {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 400;
     color: #ccc;
+    min-height: 30px;
   }
 
-  .resume-btn {
-    font-weight: 500;
-    padding: 10px 25px;
-    border-radius: 25px;
-    background-color: #ffffff;
-    color: #000;
-    border: 1px solid #ddd;
-    transition: all 0.3s;
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+  }
 
-    &:hover {
-      background-color: #f8f9fa;
-      transform: translateY(-2px);
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
     }
   }
 
   @media (max-width: 768px) {
     .animated-title {
-      font-size: 1.2rem;
+      font-size: 1rem;
+    }
+
+    .resume-btn {
+      width: 100%;
     }
   }
 }
