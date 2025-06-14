@@ -113,7 +113,6 @@
 // export default Header;
 
 
-
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -125,13 +124,11 @@ const Header = ({ resumeBasicInfo }) => {
     : "light";
 
   const [theme, setTheme] = useState(systemTheme);
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    const body = document.body;
-    body.setAttribute("data-theme", theme);
+    document.body.setAttribute("data-theme", theme);
   }, [theme]);
-
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
@@ -145,56 +142,57 @@ const Header = ({ resumeBasicInfo }) => {
   return (
     <header
       id="home"
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        backgroundColor: "#242828",
-      }}
+      className="d-flex align-items-center"
+      style={{ minHeight: "100vh", backgroundColor: "#242828" }}
     >
       <div className="container">
-        <div className="row align-items-center text-light text-center text-md-start">
-          {/* Profile Picture */}
-          <div className="col-md-6 mb-4 mb-md-0 d-flex justify-content-center">
-            <div className="polaroid">
+        <div className="row align-items-center text-center text-md-start">
+          {/* Left: Profile Image */}
+          <div className="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
+            <div className={`polaroid ${loaded ? "fade-in" : ""}`}>
               <img
                 src={profilepic}
                 alt="Profile"
-                className={`img-fluid rounded shadow-sm ${
-                  loaded ? "fade-in" : ""
-                }`}
+                className="img-fluid rounded shadow"
                 style={{ maxWidth: "300px" }}
               />
             </div>
           </div>
 
-          {/* Name, Titles, Resume */}
-          <div className="col-md-6">
-            <h1 className={`fade-in-text ${loaded ? "show" : ""}`}>{name}</h1>
-            <div className="mb-3">
-              {titles &&
-                titles.map((title, idx) => (
-                  <TypeAnimation
-                    key={idx}
-                    sequence={[title.toUpperCase(), 1500]}
-                    repeat={Infinity}
-                    wrapper="span"
-                    cursor={true}
-                    className="d-block fw-light fs-5"
-                  />
-                ))}
+          {/* Right: Name + Title + Button */}
+          <div className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <span
+              className="iconify header-icon mb-3"
+              data-icon="fa6-solid:laptop-code"
+              style={{ fontSize: "2rem", color: "#fff" }}
+            ></span>
+
+            <h1 className="text-white">{name}</h1>
+
+            <div style={{ minHeight: "50px" }}>
+              {titles && (
+                <TypeAnimation
+                  sequence={titles.flatMap((title) => [title.toUpperCase(), 1500])}
+                  wrapper="h2"
+                  repeat={Infinity}
+                  speed={50}
+                  className="text-light"
+                  style={{ fontSize: "1.2rem" }}
+                />
+              )}
             </div>
 
-            <Button
-              variant="light"
-              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="resume-button mt-3"
-            >
-              <i className="fas fa-file-alt me-2"></i>
-              See My Resume
-            </Button>
+            <div className="mt-4">
+              <Button
+                variant="light"
+                href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4"
+              >
+                <i className="fa-solid fa-file me-2"></i> See My Resume
+              </Button>
+            </div>
           </div>
         </div>
       </div>
