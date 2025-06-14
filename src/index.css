@@ -67,3 +67,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Force everything dark */
+html, body {
+  background-color: #242828 !important;
+  color: #e0e0e0 !important;
+}
+
+/* Override Bootstrap's light elements */
+.bg-light, .text-dark, .card, .btn-light, .navbar, .section, .modal-content {
+  background-color: #1f1f1f !important;
+  color: #e0e0e0 !important;
+  border: none !important;
+}
+
+a, .btn {
+  color: #00d4ff !important;
+}
+
+a:hover {
+  color: #26e4ff !important;
+}
