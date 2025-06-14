@@ -115,7 +115,6 @@
 
 
 
-
 // import { useEffect, useState } from "react";
 // import { Button } from "react-bootstrap";
 // import { TypeAnimation } from "react-type-animation";
@@ -130,46 +129,53 @@
 
 //   if (!resumeBasicInfo) return null;
 
-//   const { name, titles } = resumeBasicInfo;
 //   const profilepic = "/assets/profile.png";
+//   const { name, titles } = resumeBasicInfo;
+
+//   const titleElements = titles?.flatMap((title) => [title.toUpperCase(), 1500]) || [];
 
 //   return (
-//     <header id="home" style={{ backgroundColor: "#242828", padding: "80px 0" }}>
-//   <div className="container">
-//     <div className="row align-items-center">
-//       <div className="col-md-6 text-center mb-4 mb-md-0">
-//         <img
-//           src="/assets/profile.png"
-//           alt="Profile"
-//           className="img-fluid rounded-circle"
-//           style={{ maxWidth: "250px", height: "auto" }}
-//         />
-//       </div>
-//       <div className="col-md-6 text-center text-md-start">
-//         <h1 className="text-white">{resumeBasicInfo.name}</h1>
-//         <TypeAnimation
-//           sequence={resumeBasicInfo.titles.flatMap((t) => [t.toUpperCase(), 1500])}
-//           wrapper="h2"
-//           repeat={Infinity}
-//           cursor={true}
-//           className="text-white"
-//         />
-//         <div className="mt-4">
-//           <a
-//             href="https://drive.google.com/file/xyz"
-//             className="btn btn-outline-light"
-//             target="_blank"
-//             rel="noopener noreferrer"
-//           >
-//             <i className="fas fa-file me-2"></i>
-//             See My Resume
-//           </a>
+//     <header id="home" className="bg-dark text-light py-5" style={{ minHeight: "100vh" }}>
+//       <div className="container">
+//         <div className="row align-items-center flex-column flex-lg-row">
+//           {/* Left: Profile Picture */}
+//           <div className="col-lg-6 text-center mb-4 mb-lg-0">
+//             <img
+//               src={profilepic}
+//               alt="Profile"
+//               className={`img-fluid rounded shadow ${loaded ? "fade-in" : ""}`}
+//               style={{ maxHeight: "400px", objectFit: "cover" }}
+//             />
+//           </div>
+
+//           {/* Right: Info */}
+//           <div className="col-lg-6 text-center text-lg-start">
+//             <div className={`fade-in-text ${loaded ? "show" : ""}`}>
+//               <h1 className="fw-bold mb-3">{name}</h1>
+
+//               {titles.length > 0 && (
+//                 <TypeAnimation
+//                   sequence={titleElements}
+//                   wrapper="h3"
+//                   repeat={Infinity}
+//                   className="text-secondary mb-4"
+//                 />
+//               )}
+
+//               <Button
+//                 variant="outline-light"
+//                 className="mt-2"
+//                 href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+//                 target="_blank"
+//                 rel="noopener noreferrer"
+//               >
+//                 <i className="fas fa-file-alt me-2"></i>See My Resume
+//               </Button>
+//             </div>
+//           </div>
 //         </div>
 //       </div>
-//     </div>
-//   </div>
-// </header>
-
+//     </header>
 //   );
 // };
 
@@ -182,6 +188,8 @@
 
 
 
+
+
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -190,55 +198,74 @@ import PropTypes from "prop-types";
 const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
+  // Always use dark mode
   useEffect(() => {
-    setTimeout(() => setLoaded(true), 100);
+    document.body.setAttribute("data-theme", "dark");
+  }, []);
+
+  // For fade-in animation
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 100);
   }, []);
 
   if (!resumeBasicInfo) return null;
 
-  const profilepic = "/assets/profile.png";
   const { name, titles } = resumeBasicInfo;
-
-  const titleElements = titles?.flatMap((title) => [title.toUpperCase(), 1500]) || [];
+  const profilepic = "/assets/profile.png";
 
   return (
-    <header id="home" className="bg-dark text-light py-5" style={{ minHeight: "100vh" }}>
-      <div className="container">
-        <div className="row align-items-center flex-column flex-lg-row">
-          {/* Left: Profile Picture */}
-          <div className="col-lg-6 text-center mb-4 mb-lg-0">
+    <header
+      id="home"
+      className="hero-section text-light"
+      style={{
+        backgroundColor: "#1e1e1e",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center"
+      }}
+    >
+      <div className="container py-5">
+        <div className="row align-items-center text-center text-md-start">
+          {/* Profile image */}
+          <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={profilepic}
               alt="Profile"
-              className={`img-fluid rounded shadow ${loaded ? "fade-in" : ""}`}
-              style={{ maxHeight: "400px", objectFit: "cover" }}
+              className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
+              style={{ maxWidth: "250px", height: "auto" }}
             />
           </div>
 
-          {/* Right: Info */}
-          <div className="col-lg-6 text-center text-lg-start">
-            <div className={`fade-in-text ${loaded ? "show" : ""}`}>
-              <h1 className="fw-bold mb-3">{name}</h1>
+          {/* Right side text */}
+          <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+            <span
+              className="iconify display-4 mb-3"
+              data-icon="fa6-solid:laptop-code"
+            />
 
-              {titles.length > 0 && (
-                <TypeAnimation
-                  sequence={titleElements}
-                  wrapper="h3"
-                  repeat={Infinity}
-                  className="text-secondary mb-4"
-                />
-              )}
+            <h1 className="fw-bold mb-3">{name}</h1>
 
-              <Button
-                variant="outline-light"
-                className="mt-2"
-                href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-file-alt me-2"></i>See My Resume
-              </Button>
-            </div>
+            {titles && (
+              <TypeAnimation
+                sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+                wrapper="h4"
+                repeat={Infinity}
+                className="mb-3 text-light"
+              />
+            )}
+
+            <Button
+              variant="light"
+              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3"
+            >
+              <i className="fas fa-file-alt me-2" />
+              See My Resume
+            </Button>
           </div>
         </div>
       </div>
