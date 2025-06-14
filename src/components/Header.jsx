@@ -113,6 +113,75 @@
 // export default Header;
 
 
+
+
+
+// import { useEffect, useState } from "react";
+// import { Button } from "react-bootstrap";
+// import { TypeAnimation } from "react-type-animation";
+// import PropTypes from "prop-types";
+
+// const Header = ({ resumeBasicInfo }) => {
+//   const [loaded, setLoaded] = useState(false);
+
+//   useEffect(() => {
+//     setTimeout(() => setLoaded(true), 100);
+//   }, []);
+
+//   if (!resumeBasicInfo) return null;
+
+//   const { name, titles } = resumeBasicInfo;
+//   const profilepic = "/assets/profile.png";
+
+//   return (
+//     <header id="home" style={{ backgroundColor: "#242828", padding: "80px 0" }}>
+//   <div className="container">
+//     <div className="row align-items-center">
+//       <div className="col-md-6 text-center mb-4 mb-md-0">
+//         <img
+//           src="/assets/profile.png"
+//           alt="Profile"
+//           className="img-fluid rounded-circle"
+//           style={{ maxWidth: "250px", height: "auto" }}
+//         />
+//       </div>
+//       <div className="col-md-6 text-center text-md-start">
+//         <h1 className="text-white">{resumeBasicInfo.name}</h1>
+//         <TypeAnimation
+//           sequence={resumeBasicInfo.titles.flatMap((t) => [t.toUpperCase(), 1500])}
+//           wrapper="h2"
+//           repeat={Infinity}
+//           cursor={true}
+//           className="text-white"
+//         />
+//         <div className="mt-4">
+//           <a
+//             href="https://drive.google.com/file/xyz"
+//             className="btn btn-outline-light"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//           >
+//             <i className="fas fa-file me-2"></i>
+//             See My Resume
+//           </a>
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// </header>
+
+//   );
+// };
+
+// Header.propTypes = {
+//   resumeBasicInfo: PropTypes.object,
+// };
+
+// export default Header;
+
+
+
+
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -127,55 +196,47 @@ const Header = ({ resumeBasicInfo }) => {
 
   if (!resumeBasicInfo) return null;
 
-  const { name, titles } = resumeBasicInfo;
   const profilepic = "/assets/profile.png";
+  const { name, titles } = resumeBasicInfo;
+
+  const titleElements = titles?.flatMap((title) => [title.toUpperCase(), 1500]) || [];
 
   return (
-    <header id="home" className="hero-section">
-      <div className="container-fluid d-flex align-items-center justify-content-center min-vh-100 px-4">
-        <div className="row w-100 align-items-center">
-          {/* Left - Profile Image */}
-          <div className="col-md-6 text-center mb-4 mb-md-0">
-            <div className={`fade-in ${loaded ? "show" : ""}`}>
-              <img
-                src={profilepic}
-                alt="profile"
-                className="img-fluid rounded-circle shadow profile-image"
-                style={{ maxWidth: "300px", height: "auto" }}
-              />
-            </div>
+    <header id="home" className="bg-dark text-light py-5" style={{ minHeight: "100vh" }}>
+      <div className="container">
+        <div className="row align-items-center flex-column flex-lg-row">
+          {/* Left: Profile Picture */}
+          <div className="col-lg-6 text-center mb-4 mb-lg-0">
+            <img
+              src={profilepic}
+              alt="Profile"
+              className={`img-fluid rounded shadow ${loaded ? "fade-in" : ""}`}
+              style={{ maxHeight: "400px", objectFit: "cover" }}
+            />
           </div>
 
-          {/* Right - Texts */}
-          <div className="col-md-6 text-center text-md-start">
+          {/* Right: Info */}
+          <div className="col-lg-6 text-center text-lg-start">
             <div className={`fade-in-text ${loaded ? "show" : ""}`}>
-              <span
-                className="iconify display-4 mb-3"
-                data-icon="fa6-solid:laptop-code"
-                data-inline="false"
-              ></span>
+              <h1 className="fw-bold mb-3">{name}</h1>
 
-              <h1 className="mb-3">{name}</h1>
-
-              {/* Typing Animation for Roles */}
-              <div className="typing-wrapper mb-4">
+              {titles.length > 0 && (
                 <TypeAnimation
-                  sequence={titles.flatMap((t) => [t.toUpperCase(), 2000])}
+                  sequence={titleElements}
                   wrapper="h3"
                   repeat={Infinity}
-                  className="animated-title"
+                  className="text-secondary mb-4"
                 />
-              </div>
+              )}
 
               <Button
-                variant="light"
+                variant="outline-light"
+                className="mt-2"
                 href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="resume-btn"
               >
-                <span className="iconify me-2" data-icon="solar:file-bold" />
-                See My Resume
+                <i className="fas fa-file-alt me-2"></i>See My Resume
               </Button>
             </div>
           </div>
