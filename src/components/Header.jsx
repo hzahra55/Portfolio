@@ -119,16 +119,7 @@ import { TypeAnimation } from "react-type-animation";
 import PropTypes from "prop-types";
 
 const Header = ({ resumeBasicInfo }) => {
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-
-  const [theme, setTheme] = useState(systemTheme);
   const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
-  }, [theme]);
 
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
@@ -136,61 +127,55 @@ const Header = ({ resumeBasicInfo }) => {
 
   if (!resumeBasicInfo) return null;
 
-  const profilepic = "/assets/profile.png";
   const { name, titles } = resumeBasicInfo;
+  const profilepic = "/assets/profile.png";
 
   return (
-    <header
-      id="home"
-      className="d-flex align-items-center"
-      style={{ minHeight: "100vh", backgroundColor: "#242828" }}
-    >
-      <div className="container">
-        <div className="row align-items-center text-center text-md-start">
-          {/* Left: Profile Image */}
-          <div className="col-md-6 d-flex justify-content-center mb-4 mb-md-0">
-            <div className={`polaroid ${loaded ? "fade-in" : ""}`}>
+    <header id="home" className="hero-section">
+      <div className="container-fluid d-flex align-items-center justify-content-center min-vh-100 px-4">
+        <div className="row w-100 align-items-center">
+          {/* Left - Profile Image */}
+          <div className="col-md-6 text-center mb-4 mb-md-0">
+            <div className={`fade-in ${loaded ? "show" : ""}`}>
               <img
                 src={profilepic}
-                alt="Profile"
-                className="img-fluid rounded shadow"
-                style={{ maxWidth: "300px" }}
+                alt="profile"
+                className="img-fluid rounded-circle shadow profile-image"
+                style={{ maxWidth: "300px", height: "auto" }}
               />
             </div>
           </div>
 
-          {/* Right: Name + Title + Button */}
-          <div className="col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <span
-              className="iconify header-icon mb-3"
-              data-icon="fa6-solid:laptop-code"
-              style={{ fontSize: "2rem", color: "#fff" }}
-            ></span>
+          {/* Right - Texts */}
+          <div className="col-md-6 text-center text-md-start">
+            <div className={`fade-in-text ${loaded ? "show" : ""}`}>
+              <span
+                className="iconify display-4 mb-3"
+                data-icon="fa6-solid:laptop-code"
+                data-inline="false"
+              ></span>
 
-            <h1 className="text-white">{name}</h1>
+              <h1 className="mb-3">{name}</h1>
 
-            <div style={{ minHeight: "50px" }}>
-              {titles && (
+              {/* Typing Animation for Roles */}
+              <div className="typing-wrapper mb-4">
                 <TypeAnimation
-                  sequence={titles.flatMap((title) => [title.toUpperCase(), 1500])}
-                  wrapper="h2"
+                  sequence={titles.flatMap((t) => [t.toUpperCase(), 2000])}
+                  wrapper="h3"
                   repeat={Infinity}
-                  speed={50}
-                  className="text-light"
-                  style={{ fontSize: "1.2rem" }}
+                  className="animated-title"
                 />
-              )}
-            </div>
+              </div>
 
-            <div className="mt-4">
               <Button
                 variant="light"
                 href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4"
+                className="resume-btn"
               >
-                <i className="fa-solid fa-file me-2"></i> See My Resume
+                <span className="iconify me-2" data-icon="solar:file-bold" />
+                See My Resume
               </Button>
             </div>
           </div>

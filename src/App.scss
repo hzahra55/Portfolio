@@ -733,3 +733,42 @@ header {
     transform: translateY(0);
   }
 }
+
+.hero-section {
+  background-color: #242828;
+  color: white;
+
+  .profile-image {
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .animated-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ccc;
+  }
+
+  .resume-btn {
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: #f8f9fa;
+      transform: translateY(-2px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .animated-title {
+      font-size: 1.2rem;
+    }
+  }
+}
