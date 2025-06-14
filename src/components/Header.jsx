@@ -212,8 +212,6 @@
 
 
 
-
-
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -222,12 +220,12 @@ import PropTypes from "prop-types";
 const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
-  // Force dark theme globally
+  // Force dark mode
   useEffect(() => {
     document.body.setAttribute("data-theme", "dark");
   }, []);
 
-  // For fade-in animation of image
+  // Fade-in animation for image
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
   }, []);
@@ -243,15 +241,16 @@ const Header = ({ resumeBasicInfo }) => {
       className="hero-section text-light"
       style={{
         backgroundColor: "#1e1e1e",
-        minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        paddingTop: "20px",
+        paddingTop: "40px", // adjusted for less gap
+        paddingBottom: "40px", // balanced spacing
+        minHeight: "90vh", // slightly less than full height
       }}
     >
       <div className="container">
-        <div className="row align-items-center text-center text-md-start">
-          {/* Left: Profile Image */}
+        <div className="row align-items-center justify-content-center">
+          {/* Profile image - Left */}
           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={profilepic}
@@ -265,15 +264,15 @@ const Header = ({ resumeBasicInfo }) => {
             />
           </div>
 
-          {/* Right: Text content */}
-          <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+          {/* Text content - Right */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
             <span
               className="iconify display-5 mb-2"
               data-icon="fa6-solid:laptop-code"
               style={{ color: "#fff" }}
             />
 
-            <h1 className="fw-bold mb-2" style={{ fontSize: "2.2rem" }}>
+            <h1 className="fw-bold mb-2" style={{ fontSize: "2.2rem", color: "#fff" }}>
               {name}
             </h1>
 
