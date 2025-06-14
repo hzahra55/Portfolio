@@ -211,6 +211,9 @@
 
 
 
+
+
+
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -219,6 +222,12 @@ import PropTypes from "prop-types";
 const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
+  // Force dark theme globally
+  useEffect(() => {
+    document.body.setAttribute("data-theme", "dark");
+  }, []);
+
+  // For fade-in animation of image
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
   }, []);
@@ -231,50 +240,63 @@ const Header = ({ resumeBasicInfo }) => {
   return (
     <header
       id="home"
-      className="hero-section bg-dark text-light"
-      style={{ backgroundColor: "#1e2122" }}
+      className="hero-section text-light"
+      style={{
+        backgroundColor: "#1e1e1e",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        paddingTop: "20px",
+      }}
     >
       <div className="container">
-        <div
-          className="row align-items-center justify-content-center"
-          style={{ minHeight: "90vh", paddingTop: "40px" }}
-        >
-          {/* Profile Image */}
+        <div className="row align-items-center text-center text-md-start">
+          {/* Left: Profile Image */}
           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={profilepic}
-              alt="profile"
+              alt="Profile"
               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
-              style={{ maxWidth: "230px", height: "auto" }}
+              style={{
+                maxWidth: "240px",
+                height: "auto",
+                transition: "opacity 1s ease-in-out",
+              }}
             />
           </div>
 
-          {/* Right Content */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
+          {/* Right: Text content */}
+          <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
             <span
-              className="iconify display-4 mb-3"
+              className="iconify display-5 mb-2"
               data-icon="fa6-solid:laptop-code"
-            ></span>
+              style={{ color: "#fff" }}
+            />
 
-            <h1 className="fw-bold mb-2" style={{ color: "#ffffff" }}>
+            <h1 className="fw-bold mb-2" style={{ fontSize: "2.2rem" }}>
               {name}
             </h1>
 
-            <TypeAnimation
-              sequence={titles.flatMap((title) => [title.toUpperCase(), 1800])}
-              wrapper="h5"
-              repeat={Infinity}
-              className="text-light mb-3"
-              style={{ fontWeight: "normal", fontSize: "1.2rem" }}
-            />
+            {titles && (
+              <TypeAnimation
+                sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+                wrapper="h4"
+                repeat={Infinity}
+                className="mb-3 text-light"
+                style={{
+                  fontSize: "1.1rem",
+                  fontWeight: "400",
+                  minHeight: "30px",
+                }}
+              />
+            )}
 
             <Button
               variant="light"
               href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="resume-btn"
-              style={{ fontSize: "0.95rem", padding: "8px 20px" }}
+              className="mt-2"
             >
               <i className="fas fa-file-alt me-2" />
               See My Resume
