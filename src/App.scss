@@ -568,3 +568,37 @@ footer a:focus {
     margin-top: 20px;
   }
 }
+
+.project-card {
+  cursor: pointer;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-thumbnail {
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .project-date {
+    font-size: 0.9rem;
+    color: #777;
+  }
+}
