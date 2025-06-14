@@ -602,3 +602,44 @@ footer a:focus {
     color: #777;
   }
 }
+
+
+.section-projects {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+
+  h2 {
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .project-card {
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-image {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+
+      .card-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .card-text {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
