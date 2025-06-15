@@ -105,10 +105,6 @@ const About = ({ resumeAbout }) => {
       style={{ backgroundColor: "#1f1f1f", padding: "4rem 0" }}
     >
       <div className="container">
-        <h2 className="text-center mb-5" style={{ color: "#ffffff" }}>
-          <i className="fa-solid fa-user me-2"></i> About Me
-        </h2>
-
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div
@@ -116,10 +112,7 @@ const About = ({ resumeAbout }) => {
               style={{ backgroundColor: "#2c2c2c", color: "#e0e0e0" }}
             >
               <div className="card-body p-4">
-                <h4 className="mb-3" style={{ fontWeight: "bold" }}>
-                  <span className="wave">{hello}</span>
-                </h4>
-                <p style={{ fontSize: "1.1rem", lineHeight: "1.8" }}>{about}</p>
+                <p style={{ fontSize: "1.5rem", lineHeight: "1.9" }}>{about}</p>
               </div>
             </div>
           </div>
