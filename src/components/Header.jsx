@@ -211,7 +211,6 @@
 
 
 
-
 import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
@@ -220,12 +219,10 @@ import PropTypes from "prop-types";
 const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
-  // Force dark mode
   useEffect(() => {
     document.body.setAttribute("data-theme", "dark");
   }, []);
 
-  // Fade-in animation for image
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
   }, []);
@@ -238,41 +235,39 @@ const Header = ({ resumeBasicInfo }) => {
   return (
     <header
       id="home"
-      className="hero-section text-light"
       style={{
         backgroundColor: "#1e1e1e",
+        minHeight: "90vh",
         display: "flex",
         alignItems: "center",
-        paddingTop: "40px", // adjusted for less gap
-        paddingBottom: "40px", // balanced spacing
-        minHeight: "90vh", // slightly less than full height
+        paddingTop: "20px",
+        paddingBottom: "20px",
       }}
     >
       <div className="container">
-        <div className="row align-items-center justify-content-center">
-          {/* Profile image - Left */}
+        <div className="row align-items-center justify-content-center text-center text-md-start">
+          {/* Left: Profile Image */}
           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={profilepic}
               alt="Profile"
               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
               style={{
-                maxWidth: "240px",
+                maxWidth: "230px",
                 height: "auto",
                 transition: "opacity 1s ease-in-out",
               }}
             />
           </div>
 
-          {/* Text content - Right */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start text-center text-md-start">
+          {/* Right: Text Block */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start gap-2">
             <span
-              className="iconify display-5 mb-2"
+              className="iconify"
               data-icon="fa6-solid:laptop-code"
-              style={{ color: "#fff" }}
+              style={{ fontSize: "2rem", color: "#fff" }}
             />
-
-            <h1 className="fw-bold mb-2" style={{ fontSize: "2.2rem", color: "#fff" }}>
+            <h1 className="fw-bold mb-1" style={{ fontSize: "2rem", color: "#fff" }}>
               {name}
             </h1>
 
@@ -281,11 +276,12 @@ const Header = ({ resumeBasicInfo }) => {
                 sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
                 wrapper="h4"
                 repeat={Infinity}
-                className="mb-3 text-light"
+                className="text-light"
                 style={{
                   fontSize: "1.1rem",
                   fontWeight: "400",
                   minHeight: "30px",
+                  marginBottom: "0.5rem",
                 }}
               />
             )}
@@ -295,7 +291,6 @@ const Header = ({ resumeBasicInfo }) => {
               href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2"
             >
               <i className="fas fa-file-alt me-2" />
               See My Resume
