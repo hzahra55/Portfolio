@@ -319,10 +319,12 @@ import PropTypes from "prop-types";
 const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
+  // Force dark theme
   useEffect(() => {
     document.body.setAttribute("data-theme", "dark");
   }, []);
 
+  // Trigger fade-in
   useEffect(() => {
     setTimeout(() => setLoaded(true), 100);
   }, []);
@@ -340,8 +342,7 @@ const Header = ({ resumeBasicInfo }) => {
         backgroundColor: "#1e1e1e",
         height: "100vh",
         overflow: "hidden",
-        paddingTop: 0,
-        paddingBottom: 0,
+        padding: 0,
         margin: 0,
       }}
     >
@@ -361,21 +362,23 @@ const Header = ({ resumeBasicInfo }) => {
             />
           </div>
 
-          {/* Right Side Text */}
+          {/* Right Side Content */}
           <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
-            <span
-              className="iconify mb-2"
-              data-icon="fa6-solid:laptop-code"
-              style={{ fontSize: "1.7rem", color: "#fff" }}
-            />
-            <h1 className="fw-bold mb-1" style={{ fontSize: "2.2rem" }}>
+            {/* Removed icon here */}
+
+            <h1 className="fw-bold mb-2" style={{ fontSize: "2.8rem", color: "#fff" }}>
               {name}
             </h1>
 
             {titles && (
               <div
-                className="mb-2"
-                style={{ fontSize: "1rem", fontWeight: 400, lineHeight: "1.4" }}
+                className="mb-3"
+                style={{
+                  fontSize: "1.25rem",
+                  fontWeight: 400,
+                  minHeight: "36px",
+                  color: "#f0f0f0",
+                }}
               >
                 <TypeAnimation
                   sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
