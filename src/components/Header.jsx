@@ -355,7 +355,7 @@ const Header = ({ resumeBasicInfo }) => {
               alt="Profile"
               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
               style={{
-                maxWidth: "220px",
+                maxWidth: "280px",
                 height: "auto",
                 transition: "opacity 1s ease-in-out",
               }}
@@ -363,7 +363,7 @@ const Header = ({ resumeBasicInfo }) => {
           </div>
 
           <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center text-center">
-  <h1 className="fw-bold mb-3" style={{ fontSize: "2.8rem" }}>
+  <h1 className="fw-bold mb-3" style={{ fontSize: "3.5rem" }}>
     {name}
   </h1>
 
@@ -374,7 +374,7 @@ const Header = ({ resumeBasicInfo }) => {
       repeat={Infinity}
       className="mb-4 text-light"
       style={{
-        fontSize: "1.3rem",
+        fontSize: "1.6rem",
         fontWeight: "400",
         minHeight: "36px",
       }}
