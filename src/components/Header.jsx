@@ -362,44 +362,37 @@ const Header = ({ resumeBasicInfo }) => {
             />
           </div>
 
-          {/* Right Side Content */}
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
-            {/* Removed icon here */}
+          <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center text-center">
+  <h1 className="fw-bold mb-3" style={{ fontSize: "2.8rem" }}>
+    {name}
+  </h1>
 
-            <h1 className="fw-bold mb-2" style={{ fontSize: "2.8rem", color: "#fff" }}>
-              {name}
-            </h1>
+  {titles && (
+    <TypeAnimation
+      sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+      wrapper="h4"
+      repeat={Infinity}
+      className="mb-4 text-light"
+      style={{
+        fontSize: "1.3rem",
+        fontWeight: "400",
+        minHeight: "36px",
+      }}
+    />
+  )}
 
-            {titles && (
-              <div
-                className="mb-3"
-                style={{
-                  fontSize: "1.25rem",
-                  fontWeight: 400,
-                  minHeight: "36px",
-                  color: "#f0f0f0",
-                }}
-              >
-                <TypeAnimation
-                  sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
-                  wrapper="span"
-                  repeat={Infinity}
-                  className="text-light"
-                />
-              </div>
-            )}
+  <Button
+    variant="light"
+    href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-2"
+  >
+    <i className="fas fa-file-alt me-2" />
+    See My Resume
+  </Button>
+</div>
 
-            <Button
-              variant="light"
-              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-1"
-            >
-              <i className="fas fa-file-alt me-2" />
-              See My Resume
-            </Button>
-          </div>
         </div>
       </div>
     </header>
