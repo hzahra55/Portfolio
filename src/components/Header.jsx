@@ -355,7 +355,7 @@ const Header = ({ resumeBasicInfo }) => {
               alt="Profile"
               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
               style={{
-                maxWidth: "280px",
+                maxWidth: "340px",
                 height: "auto",
                 transition: "opacity 1s ease-in-out",
               }}
@@ -363,7 +363,7 @@ const Header = ({ resumeBasicInfo }) => {
           </div>
 
           <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center text-center">
-  <h1 className="fw-bold mb-3" style={{ fontSize: "3.5rem" }}>
+  <h1 className="fw-bold mb-3" style={{ fontSize: "3.8rem" }}>
     {name}
   </h1>
 
@@ -374,7 +374,7 @@ const Header = ({ resumeBasicInfo }) => {
       repeat={Infinity}
       className="mb-4 text-light"
       style={{
-        fontSize: "1.6rem",
+        fontSize: "1.9rem",
         fontWeight: "400",
         minHeight: "36px",
       }}
@@ -388,7 +388,11 @@ const Header = ({ resumeBasicInfo }) => {
     rel="noopener noreferrer"
     className="mt-2"
   >
-    <i className="fas fa-file-alt me-2" />
+    <i className="fas fa-file-alt me-2" style={{
+        fontSize: "1.2rem",
+        fontWeight: "200",
+        minHeight: "24px",
+      }} />
     See My Resume
   </Button>
 </div>
