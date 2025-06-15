@@ -220,7 +220,7 @@ const Header = ({ resumeBasicInfo }) => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    document.body.setAttribute("data-theme", "dark"); // force dark mode
+    document.body.setAttribute("data-theme", "dark");
   }, []);
 
   useEffect(() => {
@@ -241,34 +241,34 @@ const Header = ({ resumeBasicInfo }) => {
         minHeight: "100vh",
         display: "flex",
         alignItems: "center",
-        padding: "30px 0",
-        scrollSnapAlign: "start", // smooth transition on scroll
+        paddingTop: "0px",
+        paddingBottom: "0px",
       }}
     >
-      <div className="container">
+      <div className="container py-0">
         <div className="row align-items-center justify-content-center justify-content-md-between text-center text-md-start">
-          {/* Left: Profile Image */}
-          <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+          {/* Profile Image */}
+          <div className="col-12 col-md-5 d-flex justify-content-center mb-3 mb-md-0">
             <img
               src={profilepic}
               alt="Profile"
               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
               style={{
-                maxWidth: "240px",
+                maxWidth: "220px",
                 height: "auto",
                 transition: "opacity 1s ease-in-out",
               }}
             />
           </div>
 
-          {/* Right: Text */}
+          {/* Text Content */}
           <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start">
             <span
-              className="iconify display-5 mb-2"
+              className="iconify display-6 mb-2"
               data-icon="fa6-solid:laptop-code"
               style={{ color: "#fff" }}
             />
-            <h1 className="fw-bold mb-2" style={{ fontSize: "2.4rem" }}>
+            <h1 className="fw-bold mb-2" style={{ fontSize: "2.2rem" }}>
               {name}
             </h1>
 
@@ -277,11 +277,11 @@ const Header = ({ resumeBasicInfo }) => {
                 sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
                 wrapper="h4"
                 repeat={Infinity}
-                className="mb-3 text-light"
+                className="mb-2 text-light"
                 style={{
-                  fontSize: "1.2rem",
+                  fontSize: "1.1rem",
                   fontWeight: "400",
-                  minHeight: "30px",
+                  minHeight: "28px",
                 }}
               />
             )}
