@@ -120,94 +120,94 @@
 
 
 
-import { useEffect, useState } from "react";
-import { Button } from "react-bootstrap";
-import { TypeAnimation } from "react-type-animation";
-import PropTypes from "prop-types";
+// import { useEffect, useState } from "react";
+// import { Button } from "react-bootstrap";
+// import { TypeAnimation } from "react-type-animation";
+// import PropTypes from "prop-types";
 
-const Header = ({ resumeBasicInfo }) => {
-  const [loaded, setLoaded] = useState(false);
+// const Header = ({ resumeBasicInfo }) => {
+//   const [loaded, setLoaded] = useState(false);
 
-  // Always use dark mode
-  useEffect(() => {
-    document.body.setAttribute("data-theme", "dark");
-  }, []);
+//   // Always use dark mode
+//   useEffect(() => {
+//     document.body.setAttribute("data-theme", "dark");
+//   }, []);
 
-  // For fade-in animation
-  useEffect(() => {
-    setTimeout(() => {
-      setLoaded(true);
-    }, 100);
-  }, []);
+//   // For fade-in animation
+//   useEffect(() => {
+//     setTimeout(() => {
+//       setLoaded(true);
+//     }, 100);
+//   }, []);
 
-  if (!resumeBasicInfo) return null;
+//   if (!resumeBasicInfo) return null;
 
-  const { name, titles } = resumeBasicInfo;
-  const profilepic = "/assets/profile.png";
+//   const { name, titles } = resumeBasicInfo;
+//   const profilepic = "/assets/profile.png";
 
-  return (
-    <header
-      id="home"
-      className="hero-section text-light"
-      style={{
-        backgroundColor: "#1e1e1e",
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center"
-      }}
-    >
-      <div className="container py-5">
-        <div className="row align-items-center text-center text-md-start">
-          {/* Profile image */}
-          <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
-            <img
-              src={profilepic}
-              alt="Profile"
-              className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
-              style={{ maxWidth: "250px", height: "auto" }}
-            />
-          </div>
+//   return (
+//     <header
+//       id="home"
+//       className="hero-section text-light"
+//       style={{
+//         backgroundColor: "#1e1e1e",
+//         minHeight: "100vh",
+//         display: "flex",
+//         alignItems: "center"
+//       }}
+//     >
+//       <div className="container py-5">
+//         <div className="row align-items-center text-center text-md-start">
+//           {/* Profile image */}
+//           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+//             <img
+//               src={profilepic}
+//               alt="Profile"
+//               className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
+//               style={{ maxWidth: "250px", height: "auto" }}
+//             />
+//           </div>
 
-          {/* Right side text */}
-          <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-            <span
-              className="iconify display-4 mb-3"
-              data-icon="fa6-solid:laptop-code"
-            />
+//           {/* Right side text */}
+//           <div className="col-12 col-md-7 d-flex flex-column justify-content-center align-items-center align-items-md-start">
+//             <span
+//               className="iconify display-4 mb-3"
+//               data-icon="fa6-solid:laptop-code"
+//             />
 
-            <h1 className="fw-bold mb-3">{name}</h1>
+//             <h1 className="fw-bold mb-3">{name}</h1>
 
-            {titles && (
-              <TypeAnimation
-                sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
-                wrapper="h4"
-                repeat={Infinity}
-                className="mb-3 text-light"
-              />
-            )}
+//             {titles && (
+//               <TypeAnimation
+//                 sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+//                 wrapper="h4"
+//                 repeat={Infinity}
+//                 className="mb-3 text-light"
+//               />
+//             )}
 
-            <Button
-              variant="light"
-              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3"
-            >
-              <i className="fas fa-file-alt me-2" />
-              See My Resume
-            </Button>
-          </div>
-        </div>
-      </div>
-    </header>
-  );
-};
+//             <Button
+//               variant="light"
+//               href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+//               target="_blank"
+//               rel="noopener noreferrer"
+//               className="mt-3"
+//             >
+//               <i className="fas fa-file-alt me-2" />
+//               See My Resume
+//             </Button>
+//           </div>
+//         </div>
+//       </div>
+//     </header>
+//   );
+// };
 
-Header.propTypes = {
-  resumeBasicInfo: PropTypes.object,
-};
+// Header.propTypes = {
+//   resumeBasicInfo: PropTypes.object,
+// };
 
-export default Header;
+// export default Header;
 
 
 
@@ -308,3 +308,98 @@ export default Header;
 // };
 
 // export default Header;
+
+
+
+import { useEffect, useState } from "react";
+import { Button } from "react-bootstrap";
+import { TypeAnimation } from "react-type-animation";
+import PropTypes from "prop-types";
+
+const Header = ({ resumeBasicInfo }) => {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    document.body.setAttribute("data-theme", "dark");
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => setLoaded(true), 100);
+  }, []);
+
+  if (!resumeBasicInfo) return null;
+
+  const { name, titles } = resumeBasicInfo;
+  const profilepic = "/assets/profile.png";
+
+  return (
+    <header
+      id="home"
+      className="hero-section text-light"
+      style={{
+        backgroundColor: "#1e1e1e",
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+      }}
+    >
+      <div className="container">
+        <div className="row align-items-center justify-content-between">
+          {/* Profile Image */}
+          <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+            <img
+              src={profilepic}
+              alt="Profile"
+              className={`img-fluid rounded-circle shadow ${loaded ? "fade-in" : ""}`}
+              style={{
+                maxWidth: "220px",
+                height: "auto",
+                transition: "opacity 1s ease-in-out",
+              }}
+            />
+          </div>
+
+          {/* Right Side Content */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start gap-2">
+            <span
+              className="iconify"
+              data-icon="fa6-solid:laptop-code"
+              style={{ fontSize: "2rem", color: "#fff" }}
+            />
+
+            <h1 className="fw-bold mb-1" style={{ fontSize: "2.2rem" }}>
+              {name}
+            </h1>
+
+            {titles && (
+              <TypeAnimation
+                sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+                wrapper="h4"
+                repeat={Infinity}
+                className="text-light mb-2"
+                style={{ fontSize: "1rem", minHeight: "28px" }}
+              />
+            )}
+
+            <Button
+              variant="light"
+              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1"
+            >
+              <i className="fas fa-file-alt me-2" />
+              See My Resume
+            </Button>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+Header.propTypes = {
+  resumeBasicInfo: PropTypes.object,
+};
+
+export default Header;
