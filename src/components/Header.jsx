@@ -335,18 +335,20 @@ const Header = ({ resumeBasicInfo }) => {
   return (
     <header
       id="home"
-      className="hero-section text-light"
+      className="hero-section text-light d-flex align-items-center"
       style={{
         backgroundColor: "#1e1e1e",
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
+        height: "100vh",
+        overflow: "hidden",
+        paddingTop: 0,
+        paddingBottom: 0,
+        margin: 0,
       }}
     >
       <div className="container">
-        <div className="row align-items-center justify-content-between">
-          {/* LEFT COLUMN - PROFILE IMAGE */}
-          <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
+        <div className="row align-items-center justify-content-center">
+          {/* Profile Image */}
+          <div className="col-12 col-md-5 d-flex justify-content-center mb-3 mb-md-0">
             <img
               src={profilepic}
               alt="Profile"
@@ -359,25 +361,22 @@ const Header = ({ resumeBasicInfo }) => {
             />
           </div>
 
-          {/* RIGHT COLUMN - REMADE CLEANLY */}
-          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start gap-2 px-2">
-            {/* Icon */}
-            <div>
-              <span
-                className="iconify"
-                data-icon="fa6-solid:laptop-code"
-                style={{ fontSize: "2rem", color: "#fff" }}
-              />
-            </div>
-
-            {/* Name */}
-            <h1 className="fw-bold text-center text-md-start m-0" style={{ fontSize: "2.2rem" }}>
+          {/* Right Side Text */}
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
+            <span
+              className="iconify mb-2"
+              data-icon="fa6-solid:laptop-code"
+              style={{ fontSize: "1.7rem", color: "#fff" }}
+            />
+            <h1 className="fw-bold mb-1" style={{ fontSize: "2.2rem" }}>
               {name}
             </h1>
 
-            {/* Animated Title */}
             {titles && (
-              <div style={{ fontSize: "1rem", fontWeight: 400, minHeight: "28px" }}>
+              <div
+                className="mb-2"
+                style={{ fontSize: "1rem", fontWeight: 400, lineHeight: "1.4" }}
+              >
                 <TypeAnimation
                   sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
                   wrapper="span"
@@ -387,18 +386,16 @@ const Header = ({ resumeBasicInfo }) => {
               </div>
             )}
 
-            {/* Resume Button */}
-            <div className="mt-2">
-              <Button
-                variant="light"
-                href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-file-alt me-2" />
-                See My Resume
-              </Button>
-            </div>
+            <Button
+              variant="light"
+              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1"
+            >
+              <i className="fas fa-file-alt me-2" />
+              See My Resume
+            </Button>
           </div>
         </div>
       </div>
