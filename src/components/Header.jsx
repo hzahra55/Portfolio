@@ -345,7 +345,7 @@ const Header = ({ resumeBasicInfo }) => {
     >
       <div className="container">
         <div className="row align-items-center justify-content-between">
-          {/* Profile Image */}
+          {/* LEFT COLUMN - PROFILE IMAGE */}
           <div className="col-12 col-md-5 d-flex justify-content-center mb-4 mb-md-0">
             <img
               src={profilepic}
@@ -359,38 +359,46 @@ const Header = ({ resumeBasicInfo }) => {
             />
           </div>
 
-          {/* Right Side Content */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center align-items-md-start gap-2">
-            <span
-              className="iconify"
-              data-icon="fa6-solid:laptop-code"
-              style={{ fontSize: "2rem", color: "#fff" }}
-            />
+          {/* RIGHT COLUMN - REMADE CLEANLY */}
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start gap-2 px-2">
+            {/* Icon */}
+            <div>
+              <span
+                className="iconify"
+                data-icon="fa6-solid:laptop-code"
+                style={{ fontSize: "2rem", color: "#fff" }}
+              />
+            </div>
 
-            <h1 className="fw-bold mb-1" style={{ fontSize: "2.2rem" }}>
+            {/* Name */}
+            <h1 className="fw-bold text-center text-md-start m-0" style={{ fontSize: "2.2rem" }}>
               {name}
             </h1>
 
+            {/* Animated Title */}
             {titles && (
-              <TypeAnimation
-                sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
-                wrapper="h4"
-                repeat={Infinity}
-                className="text-light mb-2"
-                style={{ fontSize: "1rem", minHeight: "28px" }}
-              />
+              <div style={{ fontSize: "1rem", fontWeight: 400, minHeight: "28px" }}>
+                <TypeAnimation
+                  sequence={titles.flatMap((title) => [title.toUpperCase(), 2000])}
+                  wrapper="span"
+                  repeat={Infinity}
+                  className="text-light"
+                />
+              </div>
             )}
 
-            <Button
-              variant="light"
-              href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-1"
-            >
-              <i className="fas fa-file-alt me-2" />
-              See My Resume
-            </Button>
+            {/* Resume Button */}
+            <div className="mt-2">
+              <Button
+                variant="light"
+                href="https://drive.google.com/file/d/1zqzO5OiBTa-qNjbthWbCCf5qRnijOhmk/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fas fa-file-alt me-2" />
+                See My Resume
+              </Button>
+            </div>
           </div>
         </div>
       </div>
