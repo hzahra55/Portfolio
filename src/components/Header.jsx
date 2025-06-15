@@ -387,11 +387,14 @@ const Header = ({ resumeBasicInfo }) => {
     target="_blank"
     rel="noopener noreferrer"
     className="mt-2"
+    style={{
+        fontSize: "1.2rem",
+        padding : "10px 20px"
+      }}
   >
     <i className="fas fa-file-alt me-2" style={{
         fontSize: "1.2rem",
-        fontWeight: "200",
-        minHeight: "24px",
+        verticalAlign: "middle"
       }} />
     See My Resume
   </Button>
