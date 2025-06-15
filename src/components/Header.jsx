@@ -349,7 +349,9 @@ const Header = ({ resumeBasicInfo }) => {
       <div className="container">
         <div className="row align-items-center justify-content-center">
           {/* Profile Image */}
-          <div className="col-12 col-md-5 d-flex justify-content-center mb-3 mb-md-0">
+          {/* <div
+           className="col-12 col-md-5 d-flex justify-content-center mb-3 mb-md-0"> */}
+           <div className="col-12 col-md-5 d-flex justify-content-md-end justify-content-center mt-4 mt-md-0">
             <img
               src={profilepic}
               alt="Profile"
