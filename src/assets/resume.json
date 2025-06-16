@@ -17,7 +17,7 @@
   },
   "about": {
     "description_header": "",
-    "description": " I'm Huda Zahra, a budding Machine Learning enthusiast and a student at NUST. I love exploring innovative ideas, building projects, and constantly pushing my learning boundaries. I'm excited about the endless possibilities that AI brings and eager to grow, collaborate, and create meaningful impact. Let’s connect and build something amazing together!",
+    "description": "I'm Huda Zahra — a Machine Learning enthusiast and student at NUST, passionate about exploring new ideas and turning them into real-world projects. I love diving deep into AI, learning continuously, and pushing my boundaries. I'm always excited to collaborate, grow, and create things that make a meaningful impact. Let's connect and build something great together! ",
     "image": "profile.png"
   },
   "social": [
@@ -78,10 +78,6 @@
         "icon": "fastapi"
       },
       {
-        "name": "Django",
-        "icon": "django"
-      },
-      {
         "name": "Flask",
         "icon": "flask"
       },
@@ -116,10 +112,6 @@
       {
         "name": "Gradio",
         "icon": "gradio"
-      },
-      {
-        "name": "Tkinter",
-        "icon": "tkinter"
       },
       
      
@@ -180,10 +172,6 @@
         "icon": "assembly"
       },
       {
-        "name": "Visual Basic",
-        "icon": "visualbasic"
-      },
-      {
         "name": "MATLAB",
         "icon": "matlab"
       },
@@ -196,10 +184,6 @@
         "icon": "postgresql"
       },
       
-      {
-        "name": "MySQL",
-        "icon": "mysql"
-      },
       {
         "name": "SQL",
         "icon": "microsoftsqlserver"
@@ -225,11 +209,41 @@
   },
   "projects": [
     {
+      "title": "Silent STT - Visual Speech Recognition",
+      "startDate": "Spring 2024",
+      "description": "Speech Assistant - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding alongwith character-level language model (LM) to improve transcription accuracy. 40% WER.",
+      "images": [
+       
+        "aphonia.jpg"
+      ],
+      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    
+    {
+      "title": "RAG Medico BOT ",
+      "startDate": "Spring 2025",
+      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
+      "images": ["ca-1.png"],
+      "url": "https://github.com/hzahra55/Langchain_AIBot",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
+    {
       "title": "SpeechSmart - STT",
       "startDate": "Spring 2024",
       "description": "VoskAPI - Comparing speech to a reference sentence at the phoneme level. The platform is designed for therapists, teachers, and parents to support early speech intervention efficiently.",
       "images": [
-        "heart-health-management-system/hhms-1.png"
+        "speechsmart.png"
       ],
       "url": "https://github.com/hzahra55/speech_to_text_SPEECHSMART",
       "technologies": [
@@ -248,8 +262,8 @@
         },
         
         {
-          "class": "devicon-docker-plain",
-          "name": "Docker"
+          "class": "devicon-vosk-plain",
+          "name": "Vosk"
         }
       ]
     },
@@ -258,7 +272,7 @@
       "startDate": "Fall 2024",
       "description": "Resnet101 - Control YouTube videos using machine learning. By using the Jester dataset and training a ResNet-101 model, the system can interpret ten distinct gestures in real-time through the webcam corresponding to various video control functionalities",
       "images": [
-        "hep-images-segmentation/his-1.png"
+        "gesture.png"
        
       ],
       "url": "https://github.com/hzahra55/HandControl_gesture_recognition",
@@ -282,10 +296,10 @@
       "startDate": "Fall 2024",
       "description": "Python for segmentation + Train  CNN for classfication",
       "images": [
-        "hep-images-segmentation/his-1.png"
+        "his-1.png"
        
       ],
-      "url": "https://github.com/hzahra55/HandControl_gesture_recognition",
+      "url": "https://github.com/hzahra55/HEP_segmentation_classification",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -304,9 +318,9 @@
     {
       "title": "Github Repos Scraper for Trend Analysis",
       "startDate": "Fall 2024",
-      "description": "Scraping GitHub repositories across multiple topics using BeautifulSoup. Extract repository metadata, tags and star counts, and analyze and visualize the popularity of these tags based on the stars",
+      "description": "Extract repository metadata, tags and star counts, and analyze and visualize the popularity of these tags based on the stars",
       "images": [
-        "employee-attrition-prediction/eap-1.png"
+        "eap-1.png"
         
       ],
       "url": "https://github.com/hzahra55/GitHub-repos-scraper",
@@ -334,71 +348,14 @@
       ]
     },
     {
-      "title": "Portfolio Website",
-      "startDate": "Summer 2025",
-      "description": "current website",
-      "images": [
-        
-        "portfolio-website/pw-4.png"
-      ],
-      "url": "https://github.com/hzahra55/Portfolio",
-      "technologies": [
-        {
-          "class": "devicon-javascript-plain",
-          "name": "JavaScript"
-        },
-        {
-          "class": "devicon-react-plain",
-          "name": "React"
-        },
-        {
-          "class": "devicon-sass-plain",
-          "name": "Sass"
-        },
-        {
-          "class": "devicon-bootstrap-plain",
-          "name": "Bootstrap"
-        }
-      ]
-    },
-    {
-      "title": "VSR- Silent STT",
-      "startDate": "Spring 2024",
-      "description": "Visual Speech Recognition - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding with a character-level language model (LM) to improve transcription accuracy on the LRS2 dataset.",
-      "images": [
-       
-        "heart-failure-prediction/hfp-3.png"
-      ],
-      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        }
-      ]
-    },
-    {
-      "title": "LANGCHAIN Medico BOT ",
-      "startDate": "Spring 2025",
-      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
-      "images": ["chat-application/ca-1.png"],
-      "url": "https://github.com/hzahra55/Langchain_AIBot",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
-        }
-      ]
-    },
-    {
       "title": "Library Management System",
       "startDate": "Fall 2022",
-      "description": "A management system of Library with database connectivity",
+      "description": "A management system of Library with database connectivity built in Java",
       "images": [
-        "sales-inventory-management-system/sims-1.png"
+        "AdminLogin.png"
         
       ],
-      "url": "https://github.com/ahmedmbutt/Sales-Inventory-Management-System",
+      "url": "https://github.com/hzahra55/library_management_system",
       "technologies": [
         {
           "class": "devicon-java-plain",
@@ -411,10 +368,10 @@
       ]
     },
     {
-      "title": "2048 AI",
-      "startDate": "Summer 2025",
-      "description": "Simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. can adjust gamma and iterations with slider",
-      "images": ["2048-ai/ai-1.png"],
+      "title": "RL-robo",
+      "startDate": "Spring 2025",
+      "description": "Simulates a robot car using Markov Decision Processes (MDPs). It uses value iteration to find the optimal policy to balance speed and overheating risk. Can adjust gamma and iterations with slider",
+      "images": ["robo_car.png"],
       "url": "https://github.com/hzahra55/RobotCar_RL_MDP",
       "technologies": [
         {
@@ -425,6 +382,10 @@
           "class": "devicon-javascript-plain",
           "name": "JavaScript"
 
+        },
+        {
+          "class": "devicon-streamlit-plain",
+          "name": "Streamlit"
         }
       ]
     }
@@ -436,13 +397,9 @@
       "company": "The Marketing Lads",
       "role": "AI Intern",
       "date": "March 2024 - present",
-      "descBullets": ["Built scalable backend services with FastAPI and vectoredatabases to support multi-client AI platforms.",
+      "descBullets": ["Built scalable backend services with FastAPI and VectorDB to support multi-client AI platforms.",
       
-      "Automated API integrations, web scraping, and data handling workflows using n8n and other AI-driven tools.",
-      
-      "Deployed applications with Docker, GitHub Actions, and GCP for consistent CI/CD pipelines.",
-      
-      "Integrated new AI technologies like Retrieval-Augmented Generation (RAG) to enhance product capabilities."]
+      "Deployed applications with Docker, GitHub Actions, and GCP for consistent CI/CD pipelines."]
     },
     {
       "companyLogo": "rohde.png",
@@ -452,9 +409,7 @@
       "descBullets": [
         "Built and optimized secure data pipelines, integrating firewall protection and hardware acceleration for backend systems.",
 
-"Enhanced database operations using PostgreSQL to support critical communication in Air Traffic Control (ATC) applications.",
-
-"Worked with cross-functional teams on validation, deployment testing, and system security audits"
+"Enhanced database operations using PostgreSQL to support critical communication in Air Traffic Control (ATC) applications."
       ]
     },
     {
@@ -464,8 +419,6 @@
       "date": "April 202 - Jun 2024",
       "descBullets": [
         "Led development of a microservices-based infrastructure using the MERN stack",
-
-"Designed and tested RESTful APIs to ensure smooth frontend-backend integration.",
 
 "Optimized system architecture for faster load times, improved responsiveness, and better user experience."
       ]
