@@ -224,6 +224,22 @@
         }
       ]
     },
+    {
+      "title": "EchoChain",
+      "startDate": "Spring 2025",
+      "description": "Multimodal RAG - processes audio as input, performs text-based retrieval and reasoning, then outputs both text answers and playable audio snippets",
+      "images": [
+       
+        "aphonia.jpg"
+      ],
+      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
+        }
+      ]
+    },
     
     {
       "title": "RAG Medico BOT ",
@@ -235,6 +251,18 @@
         {
           "class": "devicon-python-plain",
           "name": "Python"
+        },
+        {
+          "class": "devicon-langchain-plain",
+          "name": "LangChain"
+        },
+        {
+          "class": "devicon-pinecone-plain",
+          "name": "Pinecone"
+        },
+        {
+          "class": "devicon-docker-plain",
+          "name": "Docker"
         }
       ]
     },
