@@ -210,13 +210,13 @@
   "projects": [
     {
       "title": "Silent STT - Visual Speech Recognition",
-      "startDate": "Spring 2024",
+      "startDate": "Spring 2025",
       "description": "Speech Assistant - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding alongwith character-level language model (LM) to improve transcription accuracy. 40% WER.",
       "images": [
        
-        "echochain.png"
+        "aphonia.jpg"
       ],
-      "url": "https://github.com/hzahra55/Echo_chain",
+      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -230,9 +230,9 @@
       "description": "Multimodal RAG - processes audio as input, performs text-based retrieval and reasoning, then outputs both text answers and playable audio snippets",
       "images": [
        
-        "aphonia.jpg"
+        "echochain.jpg"
       ],
-      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
+      "url": "https://github.com/hzahra55/Echo_chain",
       "technologies": [
         {
           "class": "devicon-python-plain",
