@@ -245,8 +245,8 @@
       "title": "RAG Medico BOT ",
       "startDate": "Spring 2025",
       "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
-      "images": ["ca-1.png"],
-      "url": "https://github.com/hzahra55/Langchain_AIBot",
+      "images": ["echochain.png"],
+      "url": "https://github.com/hzahra55?tab=repositories",
       "technologies": [
         {
           "class": "devicon-python-plain",
