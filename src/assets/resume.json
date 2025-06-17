@@ -230,7 +230,7 @@
       "description": "Multimodal RAG - processes audio as input, performs text-based retrieval and reasoning, then outputs both text answers and playable audio snippets",
       "images": [
        
-        "echochain.jpg"
+        "echochain.png"
       ],
       "url": "https://github.com/hzahra55/Echo_chain",
       "technologies": [
