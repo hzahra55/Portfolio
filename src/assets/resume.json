@@ -214,9 +214,9 @@
       "description": "Speech Assistant - 3DCNN+Resnet18 and Transformer-based CTC (TM-CTC) model for lipreading using pre-extracted spatio-temporal visual features from video frames. It leverages beam search decoding alongwith character-level language model (LM) to improve transcription accuracy. 40% WER.",
       "images": [
        
-        "aphonia.jpg"
+        "echochain.png"
       ],
-      "url": "https://github.com/hzahra55/3DCNNResnet_Transformer-CTC_lipReader",
+      "url": "https://github.com/hzahra55/Echo_chain",
       "technologies": [
         {
           "class": "devicon-python-plain",
@@ -237,20 +237,6 @@
         {
           "class": "devicon-python-plain",
           "name": "Python"
-        }
-      ]
-    },
-    
-    {
-      "title": "RAG Medico BOT ",
-      "startDate": "Spring 2025",
-      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
-      "images": ["echochain.png"],
-      "url": "https://github.com/hzahra55?tab=repositories",
-      "technologies": [
-        {
-          "class": "devicon-python-plain",
-          "name": "Python"
         },
         {
           "class": "devicon-langchain-plain",
@@ -263,6 +249,20 @@
         {
           "class": "devicon-docker-plain",
           "name": "Docker"
+        }
+      ]
+    },
+    
+    {
+      "title": "RAG Medico BOT ",
+      "startDate": "Spring 2025",
+      "description": "Using Langchain and FAISS vector database with MISTRAL API to use medical books for data retrieval",
+      "images": ["ca-1.png"],
+      "url": "https://github.com/hzahra55/Langchain_AIBot",
+      "technologies": [
+        {
+          "class": "devicon-python-plain",
+          "name": "Python"
         }
       ]
     },
