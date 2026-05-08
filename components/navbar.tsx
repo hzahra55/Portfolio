@@ -87,9 +87,11 @@ export function Navbar() {
               >
                 <a
                   href={profile.resumeUrl}
+                  download={profile.resumeFilename}
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium"
+                  aria-label="Download resume (PDF)"
                 >
                   Resume
                   <ArrowUpRight className="h-3.5 w-3.5" />
@@ -154,9 +156,11 @@ export function Navbar() {
                   <Button asChild variant="primary" size="lg">
                     <a
                       href={profile.resumeUrl}
+                      download={profile.resumeFilename}
                       target="_blank"
                       rel="noreferrer"
                       onClick={() => setOpen(false)}
+                      aria-label="Download resume (PDF)"
                     >
                       Resume
                       <ArrowUpRight className="h-4 w-4" />

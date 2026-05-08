@@ -69,8 +69,21 @@ export const profile = {
   bio: "I'm Huda Zahra — a Machine Learning enthusiast and student at NUST, passionate about exploring new ideas and turning them into real-world projects. I love diving deep into AI, learning continuously, and pushing my boundaries. I'm always excited to collaborate, grow, and create things that make a meaningful impact.",
   email: "hudazahrabangash@gmail.com",
   location: "Islamabad, Pakistan",
+  /**
+   * Resume download URL.
+   *
+   * Google Drive's `uc?export=download&id=<FILE_ID>` pattern returns
+   * `Content-Disposition: attachment`, so the browser downloads instead
+   * of opening the Drive viewer. Combined with the `download` attribute
+   * on the anchor, clicking the Resume button saves the PDF directly.
+   *
+   * To self-host instead (preferred for full control + faster delivery):
+   *   1. drop the PDF at `public/huda-zahra-resume.pdf`
+   *   2. change this to `resumeUrl: "/huda-zahra-resume.pdf"`
+   */
   resumeUrl:
-    "https://drive.google.com/file/d/12MB2cOw5MHDfYWO6AfDIi5UKiVMvdp7a/view",
+    "https://drive.google.com/uc?export=download&id=12MB2cOw5MHDfYWO6AfDIi5UKiVMvdp7a",
+  resumeFilename: "Huda_Zahra_Resume.pdf",
   available: true,
 };
 
