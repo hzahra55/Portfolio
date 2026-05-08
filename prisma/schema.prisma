@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model Project {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String   @db.Text
+  techStack   String[] @default([])
+  githubUrl   String?
+  demoUrl     String?
+  imageUrl    String?
+  category    String   @default("other") // "ml" | "web" | "other"
+  featured    Boolean  @default(false)
+  startedAt   String?
+  order       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Experience {
+  id          String   @id @default(cuid())
+  company     String
+  role        String
+  startDate   String   // human-readable, e.g. "March 2024"
+  endDate     String?  // null/empty = present
+  bullets     String[] @default([])
+  logoUrl     String?
+  order       Int      @default(0)
+}
+
+model Skill {
+  id       String @id @default(cuid())
+  name     String
+  category String @default("other") // "ml" | "web" | "devops" | "viz" | "lang" | "other"
+  order    Int    @default(0)
+}
+
+model Education {
+  id          String   @id @default(cuid())
+  institution String
+  degree      String
+  startDate   String
+  endDate     String?
+  details     String?
+  logoUrl     String?
+  order       Int      @default(0)
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String   @db.Text
+  createdAt DateTime @default(now())
+}
