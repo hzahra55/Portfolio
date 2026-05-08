@@ -15,8 +15,8 @@ export function Experience({ experience }: { experience: ExperienceType[] }) {
           description="Internships and engineering roles I've taken on while studying."
         />
 
-        <ScrollReveal staggerChildren={0.08} className="mt-16">
-          <ol className="relative space-y-10">
+        <ScrollReveal staggerChildren={0.08} className="mt-12 sm:mt-16">
+          <ol className="relative space-y-8 sm:space-y-10">
             {/* Vertical timeline line on md+ */}
             <span
               aria-hidden

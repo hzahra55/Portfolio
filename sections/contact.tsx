@@ -17,16 +17,16 @@ export function Contact() {
           description="Open to ML/AI roles, freelance projects, research collaborations, and the occasional good coffee chat."
         />
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-12">
+        <div className="mt-12 grid gap-4 sm:mt-16 sm:gap-6 lg:grid-cols-12">
           <ScrollReveal className="lg:col-span-5" staggerChildren={0.08}>
             <RevealItem>
-              <GlassCard interactive={false} className="p-7 md:p-8">
+              <GlassCard interactive={false} className="p-5 sm:p-7 md:p-8">
                 <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                   Direct
                 </div>
                 <a
                   href={`mailto:${profile.email}`}
-                  className="mt-3 block font-display text-2xl font-semibold tracking-tight transition hover:text-gradient md:text-3xl"
+                  className="mt-3 block break-all font-display text-lg font-semibold tracking-tight transition hover:text-gradient sm:text-xl md:text-2xl lg:text-[1.65rem]"
                 >
                   {profile.email}
                 </a>
@@ -34,7 +34,7 @@ export function Contact() {
                   Based in {profile.location}. Available for remote and hybrid
                   collaborations across timezones.
                 </p>
-                <div className="mt-8">
+                <div className="mt-6 sm:mt-8">
                   <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
                     Elsewhere
                   </p>
@@ -45,7 +45,7 @@ export function Contact() {
           </ScrollReveal>
 
           <ScrollReveal className="lg:col-span-7">
-            <GlassCard interactive={false} className="p-7 md:p-10">
+            <GlassCard interactive={false} className="p-5 sm:p-7 md:p-10">
               <ContactForm />
             </GlassCard>
           </ScrollReveal>

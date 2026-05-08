@@ -31,16 +31,16 @@ export function ProjectCard({ project, onOpen, span }: ProjectCardProps) {
         <button
           type="button"
           onClick={() => onOpen(project)}
-          className="flex h-full w-full flex-col p-7 text-left md:p-8"
+          className="flex h-full w-full flex-col p-5 text-left sm:p-6 md:p-8"
           aria-label={`Open details for ${project.name}`}
         >
           {/* Decorative accent gradient */}
           <div
-            className={`pointer-events-none absolute -top-16 -right-16 h-64 w-64 rounded-full bg-gradient-to-br ${categoryAccent[project.category]} blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-100`}
+            className={`pointer-events-none absolute -top-16 -right-16 h-48 w-48 rounded-full bg-gradient-to-br ${categoryAccent[project.category]} blur-3xl transition-opacity duration-500 opacity-50 group-hover:opacity-100 sm:h-64 sm:w-64`}
           />
 
-          <div className="relative flex items-start justify-between gap-4">
-            <div className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+          <div className="relative flex items-start justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground sm:text-[11px]">
               {project.startedAt && <span>{project.startedAt}</span>}
               {project.featured && (
                 <Badge variant="accent" className="text-[10px]">
@@ -48,31 +48,31 @@ export function ProjectCard({ project, onOpen, span }: ProjectCardProps) {
                 </Badge>
               )}
             </div>
-            <span className="grid h-9 w-9 flex-none place-items-center rounded-full border border-border bg-surface-glass transition-all group-hover:border-accent-3/50 group-hover:bg-surface-glass-hi group-hover:rotate-[-12deg] group-hover:shadow-glow">
+            <span className="grid h-8 w-8 flex-none place-items-center rounded-full border border-border bg-surface-glass transition-all group-hover:border-accent-3/50 group-hover:bg-surface-glass-hi group-hover:rotate-[-12deg] group-hover:shadow-glow sm:h-9 sm:w-9">
               <ArrowUpRight className="h-4 w-4" />
             </span>
           </div>
 
-          <h3 className="relative mt-6 font-display text-2xl font-semibold leading-tight tracking-tight md:text-3xl">
+          <h3 className="relative mt-5 font-display text-xl font-semibold leading-tight tracking-tight sm:mt-6 sm:text-2xl md:text-3xl">
             {project.name}
           </h3>
 
-          <p className="relative mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground md:text-base">
+          <p className="relative mt-2.5 line-clamp-3 text-sm leading-relaxed text-muted-foreground sm:mt-3 md:text-base">
             {project.description}
           </p>
 
-          <div className="relative mt-auto pt-6">
+          <div className="relative mt-auto pt-5 sm:pt-6">
             <div className="flex flex-wrap gap-1.5">
               {project.techStack.slice(0, 4).map((t) => (
                 <span
                   key={t}
-                  className="inline-block rounded-full border border-border bg-surface-glass px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground"
+                  className="inline-block rounded-full border border-border bg-surface-glass px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-muted-foreground sm:px-2.5 sm:py-1 sm:text-[10px]"
                 >
                   {t}
                 </span>
               ))}
               {project.techStack.length > 4 && (
-                <span className="inline-block rounded-full px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                <span className="inline-block rounded-full px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-muted-foreground sm:px-2.5 sm:py-1 sm:text-[10px]">
                   +{project.techStack.length - 4}
                 </span>
               )}
@@ -80,7 +80,7 @@ export function ProjectCard({ project, onOpen, span }: ProjectCardProps) {
           </div>
         </button>
 
-        {/* External link buttons (overlaid, click-through) */}
+        {/* External link button — always visible on touch (no hover), reveal on hover for pointers */}
         {project.githubUrl && (
           <a
             href={project.githubUrl}
@@ -88,7 +88,7 @@ export function ProjectCard({ project, onOpen, span }: ProjectCardProps) {
             rel="noreferrer"
             onClick={(e) => e.stopPropagation()}
             aria-label={`${project.name} on GitHub`}
-            className="absolute bottom-5 right-5 z-10 grid h-9 w-9 place-items-center rounded-full border border-border bg-surface-glass text-muted-foreground opacity-0 transition-all hover:border-accent-3/50 hover:text-foreground group-hover:opacity-100"
+            className="absolute bottom-4 right-4 z-10 grid h-9 w-9 place-items-center rounded-full border border-border bg-surface-glass text-muted-foreground opacity-100 transition-all hover:border-accent-3/50 hover:text-foreground sm:bottom-5 sm:right-5 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:group-hover:opacity-100"
           >
             <Github className="h-4 w-4" />
           </a>

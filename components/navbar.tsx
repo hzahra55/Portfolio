@@ -122,13 +122,13 @@ export function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-background/95 backdrop-blur-xl md:hidden"
+            className="fixed inset-0 z-40 overflow-y-auto bg-background/95 backdrop-blur-xl md:hidden"
           >
-            <div className="absolute inset-0 overflow-hidden">
+            <div className="pointer-events-none absolute inset-0 overflow-hidden">
               <div className="absolute inset-0 bg-dots opacity-40" />
             </div>
-            <nav className="relative flex min-h-screen flex-col items-center justify-center gap-2 px-6">
-              <ul className="flex flex-col items-center gap-2">
+            <nav className="relative flex min-h-screen flex-col items-center justify-center gap-2 px-6 py-24">
+              <ul className="flex w-full max-w-xs flex-col items-stretch gap-1.5">
                 {navLinks.map((l, i) => (
                   <motion.li
                     key={l.href}
@@ -139,7 +139,7 @@ export function Navbar() {
                     <Link
                       href={l.href}
                       onClick={() => setOpen(false)}
-                      className="block px-6 py-3 font-display text-3xl font-semibold tracking-tight text-foreground transition hover:text-gradient"
+                      className="block rounded-2xl px-6 py-4 text-center font-display text-2xl font-semibold tracking-tight text-foreground transition hover:bg-surface-glass hover:text-gradient"
                     >
                       {l.label}
                     </Link>
@@ -149,14 +149,12 @@ export function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.5 }}
-                  className="mt-6"
+                  className="mt-4"
                 >
-                  <Button asChild variant="primary" size="lg">
+                  <Button asChild variant="primary" size="lg" className="w-full">
                     <a
                       href={profile.resumeUrl}
                       download={profile.resumeFilename}
-                      target="_blank"
-                      rel="noreferrer"
                       onClick={() => setOpen(false)}
                       aria-label="Download resume (PDF)"
                     >

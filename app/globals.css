@@ -171,9 +171,10 @@
     background-size: 24px 24px;
   }
 
-  /* Reusable section */
+  /* Reusable section padding — tighter on mobile so the page doesn't feel
+     air-locked between sections, looser on desktop. */
   .section-pad {
-    @apply py-24 md:py-32;
+    @apply py-16 sm:py-20 md:py-28 lg:py-32;
   }
 }
 

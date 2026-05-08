@@ -8,21 +8,27 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="relative mt-24 border-t border-border bg-background/40">
-      {/* Big watermark name */}
+    <footer className="relative mt-16 border-t border-border bg-background/40 sm:mt-24">
+      {/* Big watermark name — clamped + nowrap so it doesn't wrap awkwardly on mobile */}
       <div
         aria-hidden
         className="pointer-events-none relative overflow-hidden"
       >
-        <div className="container relative mx-auto px-6">
-          <div className="font-display text-[18vw] font-bold leading-none tracking-tighter text-transparent md:text-[14vw]" style={{ WebkitTextStroke: "1px var(--border)" }}>
+        <div className="relative w-full">
+          <div
+            className="whitespace-nowrap font-display font-bold leading-none tracking-tighter text-transparent text-center"
+            style={{
+              WebkitTextStroke: "1px var(--border)",
+              fontSize: "clamp(2.5rem, 14vw, 14rem)",
+            }}
+          >
             {profile.name.toUpperCase()}
           </div>
         </div>
       </div>
 
-      <Container className="relative pb-12 pt-8">
-        <div className="grid gap-10 md:grid-cols-12">
+      <Container className="relative pb-10 pt-6 sm:pb-12 sm:pt-8">
+        <div className="grid gap-8 sm:gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <Link href="#hero" className="group inline-flex items-center gap-2.5">
               <span className="grid h-9 w-9 place-items-center rounded-full bg-gradient-to-br from-accent-1 via-accent-2 to-accent-3 font-display text-sm font-bold text-white">
@@ -63,13 +69,13 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6">
-          <p className="font-mono text-xs text-muted-foreground">
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-6 sm:mt-12">
+          <p className="font-mono text-[11px] text-muted-foreground sm:text-xs">
             © {year} {profile.name}. Crafted with intent.
           </p>
           <a
             href="#hero"
-            className="group inline-flex items-center gap-2 rounded-full border border-border bg-surface-glass px-4 py-1.5 font-mono text-xs uppercase tracking-wider text-muted-foreground transition hover:border-accent-3/40 hover:bg-surface-glass-hi hover:text-foreground"
+            className="group inline-flex items-center gap-2 rounded-full border border-border bg-surface-glass px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider text-muted-foreground transition hover:border-accent-3/40 hover:bg-surface-glass-hi hover:text-foreground sm:px-4 sm:text-xs"
             aria-label="Back to top"
           >
             <ArrowUp className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5" />

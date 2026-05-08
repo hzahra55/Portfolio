@@ -36,22 +36,22 @@ export function Skills({ skills }: { skills: Skill[] }) {
           description="Tools I've shipped real work in — grouped by where they live in the pipeline."
         />
 
-        <div className="mt-16 grid gap-4 md:grid-cols-2 lg:grid-cols-12">
+        <div className="mt-12 grid gap-3 sm:mt-16 sm:gap-4 md:grid-cols-2 lg:grid-cols-12">
           {grouped.map((g, idx) => {
-            // Bento sizing: alternate to create visual rhythm
+            // Bento sizing — varied at lg, two-column at md, single col on mobile
             const span =
               idx === 0 ? "lg:col-span-7" :
               idx === 1 ? "lg:col-span-5" :
               idx === 2 ? "lg:col-span-5" :
               idx === 3 ? "lg:col-span-4" :
               idx === 4 ? "lg:col-span-3" :
-              "lg:col-span-12";
+              "md:col-span-2 lg:col-span-12";
             return (
               <ScrollReveal key={g.category} className={span} staggerChildren={0.04}>
-                <GlassCard className="h-full p-7 md:p-8" interactive>
+                <GlassCard className="h-full p-5 sm:p-6 md:p-8" interactive>
                   <div className="flex items-center gap-3">
-                    <span className="h-2 w-2 rounded-full bg-accent-1 shadow-[0_0_12px_var(--accent-1)]" />
-                    <h3 className="font-display text-xl font-semibold tracking-tight">
+                    <span className="h-2 w-2 flex-none rounded-full bg-accent-1 shadow-[0_0_12px_var(--accent-1)]" />
+                    <h3 className="font-display text-lg font-semibold tracking-tight sm:text-xl">
                       {g.label}
                     </h3>
                     <span className="ml-auto font-mono text-xs text-muted-foreground">
@@ -61,7 +61,7 @@ export function Skills({ skills }: { skills: Skill[] }) {
                   <p className="mt-2 text-sm text-muted-foreground">
                     {g.description}
                   </p>
-                  <ul className="mt-6 flex flex-wrap gap-2">
+                  <ul className="mt-4 flex flex-wrap gap-1.5 sm:mt-6 sm:gap-2">
                     {g.items.map((s, i) => (
                       <SkillChip key={s.name} name={s.name} index={i} />
                     ))}

@@ -41,14 +41,14 @@ export function SectionHeader({
       )}
       <motion.h2
         variants={fadeUp}
-        className="font-display text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl"
+        className="font-display text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl"
       >
         {title}
       </motion.h2>
       {description && (
         <motion.p
           variants={fadeUp}
-          className="text-base leading-relaxed text-muted-foreground md:text-lg"
+          className="text-sm leading-relaxed text-muted-foreground sm:text-base md:text-lg"
         >
           {description}
         </motion.p>

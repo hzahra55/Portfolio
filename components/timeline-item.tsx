@@ -23,10 +23,10 @@ export function TimelineItem({
   const present = isPresent(endDate);
 
   return (
-    <motion.li variants={fadeUp} className="relative grid gap-4 md:grid-cols-12">
+    <motion.li variants={fadeUp} className="relative grid gap-3 md:grid-cols-12 md:gap-4">
       {/* Date column */}
       <div className="md:col-span-3">
-        <div className="sticky top-28 flex items-center gap-3 md:flex-col md:items-start">
+        <div className="flex items-center gap-3 md:sticky md:top-28 md:flex-col md:items-start">
           <div className="flex items-center gap-2">
             <span className="relative inline-flex h-2.5 w-2.5">
               {present && (
@@ -34,7 +34,7 @@ export function TimelineItem({
               )}
               <span className={`relative inline-flex h-2.5 w-2.5 rounded-full ${present ? "bg-accent-3 shadow-[0_0_10px_var(--accent-3)]" : "bg-muted-foreground"}`} />
             </span>
-            <span className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+            <span className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground sm:text-xs">
               {formatDateRange(startDate, endDate)}
             </span>
           </div>
@@ -43,10 +43,10 @@ export function TimelineItem({
 
       {/* Content card */}
       <div className="md:col-span-9">
-        <GlassCard className="p-6 md:p-8" interactive>
+        <GlassCard className="p-5 sm:p-6 md:p-8" interactive>
           <div className="flex flex-wrap items-baseline justify-between gap-3">
-            <div>
-              <h3 className="font-display text-xl font-semibold tracking-tight md:text-2xl">
+            <div className="min-w-0 flex-1">
+              <h3 className="font-display text-lg font-semibold tracking-tight sm:text-xl md:text-2xl">
                 {role}
               </h3>
               <p className="mt-1 text-sm text-muted-foreground">
@@ -59,14 +59,14 @@ export function TimelineItem({
               </span>
             )}
           </div>
-          <ul className="mt-5 space-y-2.5">
+          <ul className="mt-4 space-y-2 sm:mt-5 sm:space-y-2.5">
             {bullets.map((b, i) => (
               <li
                 key={i}
-                className="flex gap-3 text-sm leading-relaxed text-foreground/80"
+                className="flex gap-2.5 text-sm leading-relaxed text-foreground/80 sm:gap-3"
               >
                 <span className="mt-2 inline-block h-1 w-1 flex-none rounded-full bg-accent-1" />
-                {b}
+                <span className="min-w-0">{b}</span>
               </li>
             ))}
           </ul>
