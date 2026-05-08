@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+ * GLOBAL DESIGN TOKENS — single source of truth.
+ * To retheme the entire site, edit the values in :root below.
+ * No component should ever hardcode a hex/rgb color — they all
+ * resolve via Tailwind utilities that map to these variables.
+ * ============================================================ */
+
+@layer base {
+  :root {
+    /* === Surfaces & text === */
+    --background: oklch(0.13 0.02 270);
+    --foreground: oklch(0.97 0.01 270);
+    --muted: oklch(0.22 0.02 270);
+    --muted-foreground: oklch(0.65 0.02 270);
+    --border: oklch(1 0 0 / 0.08);
+    --input: oklch(1 0 0 / 0.06);
+
+    /* === Accent palette (the brand colors) === */
+    --accent-1: oklch(0.65 0.25 280); /* indigo — primary */
+    --accent-2: oklch(0.68 0.27 310); /* purple */
+    --accent-3: oklch(0.78 0.18 200); /* cyan */
+
+    /* === Elevated surfaces === */
+    --surface: oklch(0.17 0.02 270);
+    --surface-glass: oklch(1 0 0 / 0.04);
+    --surface-glass-hi: oklch(1 0 0 / 0.08);
+
+    /* === Feedback colors === */
+    --ring: var(--accent-3);
+    --danger: oklch(0.65 0.22 25);
+    --success: oklch(0.72 0.18 150);
+
+    /* === Aurora gradient stops (hero background) === */
+    --aurora-1: var(--accent-1);
+    --aurora-2: var(--accent-2);
+    --aurora-3: var(--accent-3);
+
+    /* === Effects === */
+    --glow-accent: 0 0 40px oklch(0.65 0.25 280 / 0.35);
+    --glow-accent-lg: 0 0 80px oklch(0.65 0.25 280 / 0.5);
+    --grain-opacity: 0.04;
+
+    /* === Typography === */
+    --font-display: var(--font-space-grotesk);
+
+    color-scheme: dark;
+  }
+
+  /* Optional preset themes — set <html data-theme="..."> to swap. */
+  [data-theme="cyberpunk"] {
+    --accent-1: oklch(0.72 0.3 330);
+    --accent-2: oklch(0.85 0.18 90);
+    --accent-3: oklch(0.7 0.25 200);
+  }
+
+  [data-theme="aurora-warm"] {
+    --accent-1: oklch(0.7 0.22 30);
+    --accent-2: oklch(0.75 0.2 60);
+    --accent-3: oklch(0.78 0.18 320);
+  }
+
+  [data-theme="midnight"] {
+    --background: oklch(0.1 0.015 250);
+    --accent-1: oklch(0.6 0.22 240);
+    --accent-2: oklch(0.7 0.2 200);
+    --accent-3: oklch(0.55 0.2 280);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "ss02", "cv01";
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--accent-1);
+    color: var(--foreground);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--surface-glass-hi);
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-1);
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+
+  /* Focus rings */
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+}
+
+@layer components {
+  /* Glass surface utility */
+  .glass {
+    background: var(--surface-glass);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid var(--border);
+  }
+
+  .glass-hover:hover {
+    background: var(--surface-glass-hi);
+  }
+
+  /* Gradient text */
+  .text-gradient {
+    background: linear-gradient(
+      120deg,
+      var(--accent-1) 0%,
+      var(--accent-2) 50%,
+      var(--accent-3) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  /* Animated gradient text */
+  .text-gradient-anim {
+    background: linear-gradient(
+      120deg,
+      var(--accent-1),
+      var(--accent-2),
+      var(--accent-3),
+      var(--accent-1)
+    );
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shimmer 6s linear infinite;
+  }
+
+  /* Subtle dotted grid */
+  .bg-dots {
+    background-image: radial-gradient(
+      oklch(1 0 0 / 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 24px 24px;
+  }
+
+  /* Reusable section */
+  .section-pad {
+    @apply py-24 md:py-32;
+  }
+}
+
+/* Reduced motion: disable decorative animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
