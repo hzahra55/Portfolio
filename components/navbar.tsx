@@ -88,8 +88,6 @@ export function Navbar() {
                 <a
                   href={profile.resumeUrl}
                   download={profile.resumeFilename}
-                  target="_blank"
-                  rel="noreferrer"
                   className="font-medium"
                   aria-label="Download resume (PDF)"
                 >

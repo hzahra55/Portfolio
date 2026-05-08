@@ -70,19 +70,13 @@ export const profile = {
   email: "hudazahrabangash@gmail.com",
   location: "Islamabad, Pakistan",
   /**
-   * Resume download URL.
-   *
-   * Google Drive's `uc?export=download&id=<FILE_ID>` pattern returns
-   * `Content-Disposition: attachment`, so the browser downloads instead
-   * of opening the Drive viewer. Combined with the `download` attribute
-   * on the anchor, clicking the Resume button saves the PDF directly.
-   *
-   * To self-host instead (preferred for full control + faster delivery):
-   *   1. drop the PDF at `public/huda-zahra-resume.pdf`
-   *   2. change this to `resumeUrl: "/huda-zahra-resume.pdf"`
+   * Resume download URL — served from /public so the browser saves the
+   * PDF directly (same-origin + Content-Disposition via the download
+   * attribute on the anchor). The placeholder PDF is auto-generated
+   * from this file's content via `npm run generate:resume`. Replace
+   * public/huda-zahra-resume.pdf with a designer-laid-out PDF anytime.
    */
-  resumeUrl:
-    "https://drive.google.com/uc?export=download&id=12MB2cOw5MHDfYWO6AfDIi5UKiVMvdp7a",
+  resumeUrl: "/huda-zahra-resume.pdf",
   resumeFilename: "Huda_Zahra_Resume.pdf",
   available: true,
 };
