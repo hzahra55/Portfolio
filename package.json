@@ -16,7 +16,7 @@
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:report": "playwright show-report",
     "generate:resume": "tsx scripts/generate-resume.ts",
-    "postinstall": "prisma generate --no-engine || prisma generate || echo 'prisma generate skipped'"
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
